@@ -5,7 +5,6 @@ class TabellKolonner <dok_id, dok_navn, datoer, kommuner, stedsnavn, mineraler >
    linjeformatering(innData) {
       var utData = "";
       for(var i=0;i<innData.length; ++i) {
-         console.log("Dato nr: " + i);
          if(i==0){
             utData = innData[i];
          } else {
@@ -28,7 +27,7 @@ class TabellKolonner <dok_id, dok_navn, datoer, kommuner, stedsnavn, mineraler >
 
    render() {
       return (
-   		<tr>
+   		<tr id="tr-style">
    			<td>{this.props.dok_id}</td>
    			<td>{this.props.dok_navn}</td>
             <td>{this.listeformatering(this.props.datoer)}</td>

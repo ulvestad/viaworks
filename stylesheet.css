@@ -1,5 +1,5 @@
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid red;
 	text-align: center;
 }
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 body {
-	background-color: ;
+	background-color: green;
 }
 
 h1 {
@@ -30,4 +30,9 @@ h1 {
 }
 ul {
 	list-style-type: none; 
+}
+
+#tr-style {
+	background-color: yellow;
+	color: silver;
 }
