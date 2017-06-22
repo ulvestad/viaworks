@@ -28,3 +28,6 @@ h1 {
 	text-shadow: 2px 1px pink;
 	text-decoration: underline
 }
+ul {
+	list-style-type: none; 
+}
