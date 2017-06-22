@@ -34,7 +34,6 @@ class App extends React.Component {
          		kommuner={this.state.kommuner} stedsnavn={this.state.stedsnavn} mineraler={this.state.mineraler} />
          	<TabellKolonner dok_id="2222" dok_navn="NAVN2" datoer={["20.02.2002"]} 
     			kommuner={["Trondheim"]} stedsnavn={["Lade"]} mineraler={["Bare gull og grønne skoger"]} />
-
          </tabel>
         </div>
       );
