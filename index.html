@@ -6,6 +6,169 @@
 		<title>Undersøkelsesrapporter</title>
 	</head>
 	<body>
+
+		<h1>Oversikt over data som er hentet ut fra undersøkelsesrapporter</h1>
+		<div align="center">
+			<form action="" method="post" >
+				<table>
+					<tr>
+						<td>Søk på dokumentnavn<input type="text" name="sok_navn"/> <br></td>
+						<td>Søk på dokumnet ID<input type="text" name="sok_id"/> <br></td>
+						<td><input type="Submit" value="Søk" name="sok"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<br>
+		<div align="center">
+			<form action="" method="get">
+				<table>
+					<tr>
+						<td>Søk<input type="text" name="sok_navn"/> <br></td>
+						<td>
+							<select name="dropdown">
+								<option value="dokumentdavn">Dokumentnavn</option>
+								<option value="dokumentid">Dokument ID</option>
+								<option value ="tingogtang">Ting og tang</option>
+							</select>
+						</td>
+						<td><input type="Submit" value="Søk" name="sok"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<br>
+		<div align="center">
+			<table>
+				<tr>
+					<th>Dokument ID</th>
+					<th>Dokumentnavn</th>
+					<th>Dato</th>
+					<th>Steder</th>
+					<th>Kommuner</th>
+					<th>Mineraler</th>
+				</tr>
+				<tr>
+					<td>
+						11111111
+					</td>
+					<td>
+						Document1
+					</td>
+					<td>
+						11.01.2001 <br>
+						12.01.2001 <br>
+						13.01.2001 <br>
+						14.01.2001 <br>
+					</td>
+					<td>
+						Trondheim <br>
+						Lade <br>
+						Ringve <br>
+					</td>
+					<td>
+						Trondheim <br>
+					</td>
+					<td>
+						Diamant <br>
+						Kobber <br>
+						Grafitt <br>
+						Gull <br>
+						Platina <br>
+						Svovel <br>
+						Sølv <br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						22222222
+					</td>
+					<td>
+						Document2
+					</td>
+					<td>
+						11.01.2001 <br>
+						12.01.2001 <br>
+						13.01.2001 <br>
+						14.01.2001 <br>
+					</td>
+					<td>
+						Trondheim <br>
+						Lade <br>
+						Ringve <br>
+					</td>
+					<td>
+						Trondheim <br>
+					</td>
+					<td>
+						Apatitt <br>
+						Lazulitt <br>
+						Monazitt <br>
+						Turkis (mineral) <br>
+						Vivianitt <br>
+						Xenotim <br>
+					</td>
+				</tr>
+				<tr>
+					<td>33333333</td>
+					<td>
+						Document3
+					</td>
+					<td>
+						11.01.2001 <br>
+						12.01.2001 <br>
+						13.01.2001 <br>
+						14.01.2001 <br>
+					</td>
+					<td>
+						Trondheim <br>
+						Lade <br>
+						Ringve <br>
+					</td>
+					<td>
+						Trondheim <br>
+					</td>
+					<td>
+						Flusspat <br>
+						Halitt <br>
+						Kryolitt <br>
+						Sylvitt <br>
+					</td>
+				</tr>
+				<tr>
+					<td>44444444</td>
+					<td>
+						Document4
+					</td>
+					<td>
+						11.01.2001 <br>
+						12.01.2001 <br>
+						13.01.2001 <br>
+						14.01.2001 <br>
+					</td>
+					<td>
+						Trondheim <br>
+						Lade <br>
+						Ringve <br>
+					</td>
+					<td>
+						Trondheim <br>
+					</td>
+					<td>
+						Böhmitt <br>
+						Brucitt <br>
+						Diaspor <br>
+						Gibbsitt <br>
+						Goethitt <br>
+						Lepidokrositt <br>
+						Manganitt <br>
+						Natriumhydroksid <br>
+					</td>
+				</tr>
+			</table>
+		</div>
 		<div id = "app"></div>
       	<script src = "index.js"></script>
 	</body>
