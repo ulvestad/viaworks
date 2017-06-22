@@ -8,6 +8,38 @@
 
 		<h1>Oversikt over data som er hentet ut fra undersøkelsesrapporter</h1>
 		<div align="center">
+			<form action="" method="post" >
+				<table>
+					<tr>
+						<td>Søk på dokumentnavn<input type="text" name="sok_navn"/> <br></td>
+						<td>Søk på dokumnet ID<input type="text" name="sok_id"/> <br></td>
+						<td><input type="Submit" value="Søk" name="sok"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<br>
+		<div align="center">
+			<form action="" method="get">
+				<table>
+					<tr>
+						<td>Søk<input type="text" name="sok_navn"/> <br></td>
+						<td>
+							<select name="dropdown">
+								<option value="dokumentdavn">Dokumentnavn</option>
+								<option value="dokumentid">Dokument ID</option>
+								<option value ="tingogtang">Ting og tang</option>
+							</select>
+						</td>
+						<td><input type="Submit" value="Søk" name="sok"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<br>
+		<div align="center">
 			<table>
 				<tr>
 					<th>Dokument ID</th>
