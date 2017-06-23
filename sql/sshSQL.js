@@ -13,9 +13,8 @@ function SQLquery(){
 
 	const query = {
 		//text: 'SELECT COUNT(dok_id) FROM data'
-	  	text: 'SELECT * FROM data LIMIT 1'
+	  	text: 'SELECT * FROM data LIMIT 4'
 	}
-
 	// callback
 	client.query(query, (err, res) => {
 	  if (err) {
@@ -31,12 +30,16 @@ function SQLquery(){
 		    var stedsnavn = res.rows[x].stedsnavn
 		    var kommune = res.rows[x].kommunenr
 		  	var mineraler = res.rows[x].mineraler
+
+		  	//console.log(row)
+	  		console.log(dok_id, dok_navn, datoer, stedsnavn, kommune, mineraler)
 	  	}
 	  	
-	    
-	  	console.log(row)
-	  	console.log(dok_id, dok_navn, datoer, stedsnavn, kommune, mineraler)
+	  	
 	  }
+	  client.query('SELECT COUNT(dok_id) FROM data',(err,res) =>{
+	  	console.log("Number of documents scanned: "+res.rows[0].count)
+	  })
 	  client.end()
 	})
 }
