@@ -1,6 +1,7 @@
 import React from 'react';
 import Dyr from './Components/Dyr.js';
 import TabellKolonner from './Components/TabellKolonner.js';
+import SshSQL from './sql/sshSQL.js';
 
 class App extends React.Component {
 	constructor(props) {
@@ -40,7 +41,6 @@ class App extends React.Component {
 	}
 
     render() {
-
       return (
       	<div>
 	  		<div id="bilder">
@@ -60,6 +60,8 @@ class App extends React.Component {
 			        <TabellKolonner key={info.dok_id} dok_id={info.dok_id} dok_navn={info.dok_navn} datoer={info.datoer} 
 			        kommuner={info.kommuner} stedsnavn={info.stedsnavn} mineraler={info.mineraler}/>
 			    )}
+
+
 
          	</tabel>
         </div>

@@ -1,7 +1,7 @@
 const {Client } = require('pg')
 
 
-function SQLquery(){
+function SQLquery(dok_idInn){
 	const client = new Client({
 	  user: 'postgres',
 	  host: '10.103.166.213',
@@ -13,7 +13,7 @@ function SQLquery(){
 
 	const query = {
 		//text: 'SELECT COUNT(dok_id) FROM data'
-	  	text: 'SELECT * FROM data LIMIT 4'
+	  	text: `SELECT * FROM data LIMIT 4 WHERE dok_id =` + `${dok_idInn}`
 	}
 	// callback
 	client.query(query, (err, res) => {
@@ -44,7 +44,7 @@ function SQLquery(){
 	})
 }
 
-SQLquery()
+SQLquery(2835569)
 // promise
 //client.query(query)
 //  .then(res => console.log(res.rows[0]))
