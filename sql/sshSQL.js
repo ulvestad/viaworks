@@ -13,7 +13,7 @@ function SQLquery(dok_idInn){
 
 	const query = {
 		//text: 'SELECT COUNT(dok_id) FROM data'
-	  	text: `SELECT * FROM data LIMIT 4 WHERE dok_id =` + `${dok_idInn}`
+	  	text: `SELECT * FROM data LIMIT 4 WHERE dok_id =${dok_idInn}`
 	}
 	// callback
 	client.query(query, (err, res) => {

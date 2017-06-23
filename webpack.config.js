@@ -10,6 +10,10 @@ var config = {
       inline: true,
       port: 8080
    },
+   node: {
+      den: "mock",
+      net: "mock"
+   },
 	
    module: {
       loaders: [
