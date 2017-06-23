@@ -11,10 +11,9 @@ var config = {
       port: 8080
    },
    node: {
-      den: "mock",
-      net: "mock"
+      fs: 'empty'
    },
-	
+
    module: {
       loaders: [
          {
