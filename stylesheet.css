@@ -13,6 +13,7 @@ table {
 	position: relative;
 	background-color: yellow;
 	color: silver;
+	align-self: center;
 }
 
 h1 {
@@ -35,4 +36,7 @@ ul {
 #tr-style {
 	background-color: yellow;
 	color: silver;
+}
+#bilder {
+	border-: 2px blue;
 }
