@@ -1,6 +1,15 @@
-var config = {
+var config = {   
+   
    entry: './main.js',
-	
+
+   node:{
+      dns:"empty",
+      tls:"empty",
+      net:"empty",
+      fs:"empty"
+   },
+	 
+
    output: {
       path:'/',
       filename: 'index.js',
@@ -9,9 +18,6 @@ var config = {
    devServer: {
       inline: true,
       port: 8080
-   },
-   node: {
-      fs: 'empty'
    },
 
    module: {

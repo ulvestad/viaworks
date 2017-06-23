@@ -1,7 +1,7 @@
 import React from 'react';
 import Dyr from './Components/Dyr.js';
 import TabellKolonner from './Components/TabellKolonner.js';
-//import SshSQL from './sql/sshSQL.js';
+import SshSQL from './sql/sshSQL.js';
 
 class App extends React.Component {
 	constructor(props) {
