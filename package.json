@@ -25,11 +25,11 @@
     "fs": "0.0.1-security",
     "node-gyp": "^3.6.2",
     "pg": "^6.4.0",
-    "pg-native": "^1.10.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "pg-native": "^1.10.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.5.0"
   }
