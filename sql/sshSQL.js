@@ -8,6 +8,7 @@ const {Client } = require('pg')
 //SQLquery()
 
 class SshSQL extends React.Component {
+
 	SQLquery(){
 		const client = new Client({
 		  user: 'postgres',
@@ -17,7 +18,7 @@ class SshSQL extends React.Component {
 		  port: 5432,
 		})
 		client.connect()
-
+		return (<div>h</div>)
 		const query = {
 			//text: 'SELECT COUNT(dok_id) FROM data'
 		  	text: `SELECT * FROM data LIMIT 4`
@@ -49,11 +50,12 @@ class SshSQL extends React.Component {
 		  })
 		  client.end()
 		})
+
 	}
 
 	render() {
 		return (
-			<div>HEI</div>
+			<div>Hei</div>
 		)
 	}
 }
