@@ -163,7 +163,7 @@ def threading(docnum):
 if __name__ == '__main__':
 
 	start_doc = int(input("Start document: "))
-	end_doc = int(input("Start document: "))
+	end_doc = int(input("End document: "))
 
 	proc_li = list(range(start_doc, start_doc+end_doc))
 
