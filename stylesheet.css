@@ -40,3 +40,8 @@ ul {
 #bilder {
 	border-: 2px blue;
 }
+
+input {
+	background-color: orange;
+	color: white;
+}
