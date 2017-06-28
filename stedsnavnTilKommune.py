@@ -9,51 +9,61 @@ except:
 
 cur = conn.cursor()
 
-# cur.execute("SELECT * FROM data ORDER BY dok_id")
-# rows = cur.fetchall()
+cur.execute("SELECT * FROM data ORDER BY dok_id")
+rows = cur.fetchall()
 
 
-# for row in rows:
-# 	lagreSteder = []
-# 	dok_id = [row[0]]
-# 	if row[3]:
-# 		for stedsnavn in row[3]:
-# 			cur.execute("SELECT enh_snavn FROM kommune where enh_snavn = '" + str(stedsnavn) + "'")
-# 			kommune = cur.fetchall()
-# 			if(kommune):
-# 				cur.execute("SELECT stedsnavn FROM data WHERE '" + kommune[0][0] + "' = ANY(kommunenr)")
-# 				kommuneIListe = cur.fetchall()
-# 				if not kommuneIListe:
-# 					cur.execute("UPDATE data SET kommunenr = kommunenr || '{" + kommune[0][0] + "}' WHERE dok_id = %s",(dok_id))
+for row in rows:
+	lagreSteder = []
+	dok_id = [row[0]]
+	if row[3]:
+		for stedsnavn in row[3]:
+			cur.execute("SELECT enh_snavn FROM kommune where enh_snavn = '" + str(stedsnavn) + "'")
+			kommune = cur.fetchall()
+			if(kommune):
+				cur.execute("SELECT stedsnavn FROM data WHERE '" + kommune[0][0] + "' = ANY(kommunenr)")
+				kommuneIListe = cur.fetchall()
+				if not kommuneIListe:
+					cur.execute("UPDATE data SET kommunenr = kommunenr || '{" + kommune[0][0] + "}' WHERE dok_id = %s",(dok_id))
 
-# 			else:
-# 				lagreSteder.append(stedsnavn)
+			else:
+				lagreSteder.append(stedsnavn)
 
-# 	cur.execute("UPDATE data SET stedsnavn = null WHERE dok_id = '%s'",(dok_id))
-# 	for stedar in lagreSteder:
-# 		cur.execute("UPDATE data SET stedsnavn = stedsnavn || '{" + stedar + "}' WHERE dok_id = %s",(dok_id))
-
-# conn.commit();
-
+	cur.execute("UPDATE data SET stedsnavn = null WHERE dok_id = '%s'",(dok_id))
+	for stedar in lagreSteder:
+		cur.execute("UPDATE data SET stedsnavn = stedsnavn || '{" + stedar + "}' WHERE dok_id = %s",(dok_id))
+conn.commit()
 
 cur.execute("SELECT * FROM data")
 rows = cur.fetchall()
 for row in rows:
-	steder_i_kommune = []
 	dok_id = [row[0]]
 	if row[3] and row[4]:
 		for kommune in row[4]:
+			steder_i_kommune = []
 			for sted in row[3]:
 				cur.execute("SELECT sted.enh_snavn,kommune.enh_snavn FROM sted,kommune WHERE sted.enh_snavn = '" + sted + "' AND kommune.enh_komm = sted.enh_komm AND kommune.enh_snavn = '" + kommune + "'")
 				stedIKomm = cur.fetchall()
 				if stedIKomm:
 					for komm in stedIKomm:
-						if komm not in steder_i_kommune:
-							steder_i_kommune.append(komm)
-	print(steder_i_kommune)
+						if komm[0] not in steder_i_kommune:
+							steder_i_kommune.append(komm[0])
+			datainn = kommune + "("
+			i = 0
+			for steidar in steder_i_kommune:
+				if i == 0:
+					datainn += steidar
+				else:
+					datainn += ", " + steidar
+				i+=1
+
+			datainn += ")"
+			cur.execute("UPDATE data SET kommune_sted = kommune_sted || '{" + datainn + "}' WHERE dok_id = %s",(dok_id))
 
 
-cur.commit()
+
+
+conn.commit()
 
 
 # cur.execute("SELECT sted.enh_snavn,kommune.enh_snavn FROM sted,kommune WHERE sted.enh_snavn = 'Lade' AND kommune.enh_komm = sted.enh_komm AND kommune.enh_snavn = 'Trondheim'")
