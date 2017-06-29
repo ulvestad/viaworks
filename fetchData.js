@@ -1,5 +1,7 @@
+
+
 const {Client } = require('pg')
-var fs = require('fs');
+var fs = require('graceful-fs')
 
 
 function SQLquery(){
@@ -33,9 +35,11 @@ function SQLquery(){
 		  		var dok_id = res.rows[x].dok_id
 		  		content += dok_id+";"
 		  		table += "<td>"+dok_id+"</td>\n"
+
 			    var dok_navn = res.rows[x].dok_navn
 			    content += dok_navn+";"
 			    table += "<td>"+dok_navn+"</td>\n"
+
 			    var datoer = res.rows[x].datoer
 			    if(datoer != null){
 			    	content += "\""+datoer.join()+"\";"
@@ -45,6 +49,19 @@ function SQLquery(){
 			    	content +=";"
 			    	table += "<td style=\"width:15%\"> </td>\n"
 			    }
+
+			    var sted_i_kommune = res.rows[x].kommune_sted
+			    if(sted_i_kommune != null){
+			    	content +=
+			    	content += "\""+sted_i_kommune.join()+"\";"
+			    	table += "<td>"+sted_i_kommune.join()+"</td>\n"
+			    }
+			    else{
+			    	content +=";"
+			    	table += "<td> </td>\n"
+			    }
+	
+
 			    var stedsnavn = res.rows[x].stedsnavn
 			    if(stedsnavn != null){
 			    	content += "\""+stedsnavn.join()+"\";"
@@ -54,6 +71,7 @@ function SQLquery(){
 			    	stedsnavn +=";"
 			    	table += "<td></td>\n"
 			    }
+
 			    var kommune = res.rows[x].kommunenr
 
 			    if(kommune != null){
@@ -64,6 +82,7 @@ function SQLquery(){
 			    	content +=";"
 			    	table += "<td></td>\n"
 			    }
+			    
 			    var mineraler = res.rows[x].mineraler
 			    if(mineraler != null){
 			    	content += "\""+mineraler.join()+"\";"
