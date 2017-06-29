@@ -14,7 +14,7 @@ def threading(docnum):
 
 	start_time = time.time()
 
-	cookie = ".ASPXAUTH=25CA7196C2F26D7DF53FE754AFA7765B5277F0862294D34136A7D3C80350ED5C31598EB0A52EFA562186EA32BE4056C4D81C5409F03F84F6EF06236B87FCB8ACD14902F7AF1D720F93051B8E51CE8F70345CCDA5991E7C18D3EBFB11319D2F2B081049104EBB7090F48722D9FB8C8268D5F36391C07BA4559E30DB71D62320DFC4A3A1A4235D20439BAF529020F86C823CC1B947B689BB9BD05D47B14C53A565D492D52A935E03361017004A2F28262DB1C3D336C10A9CEB236B58DEE0F2A9C96B8783DC03FE33E7464B53ADB00D1731DEA569B1A471A12E657B281478156F4545B85B3D66E5027DA9E12C8BDCC3BEDFA3DD1B310803615C6A38496CBE8F5413CBEF9D5C697BC86CD3D85C36ECF9E9902D7F9F4B89516D37B270ECC6CFD889DFBA515615652531DF66D27F011159B5049677D2CC5AAAA189EA05E3D162C4C4639FCE41F61EF243B9EBC577BA7216EB45096C6393C9CD18F8ED9646C3EC658B023C761AA4AA5D827D08CCC7B2707428858BCE714C454283A560EA9741F553FECA6E152362C746B9D730AB8EA220B70B5DFFA6706248C0787C62E4886C7BE3BDF215619D38; "
+	cookie = ".ASPXAUTH=78525415B015D500FF202DC008D961C3966EA7AF8005F1B10BC82644D3E7A9BD854F8D9956372DCD4F7F0264FE7BF48F0368C07D40A254E5AB67118363645F9F18FD529668BE02EC255C0045ECE491D30E6AE1FA2592F693D1EC77EE7DA79134728DC7A61CCA93B9FE8F1860D732D1F9CFC060B83543641276AD72138C5ECCCAAE4921B4BFB84BB477FC605B686067D49E270BA28C2635E683DA4B6D61270FB584FD3AE52DCB099D84F55208C4FB445FE0EB39221237680991D42596CBDA83FB36421ACAEFD9597DDF48EE70C68D2905F610F24C1BF21BF1B23AAB7E4316133BF7ADBF53E8595AAFECEA9B13BB3BF3FFBE75FE661110747922D7BF81529A2FD7073E93F3FE4612B1BFA885180789E40CEFB3B969F83950948977EF57FF78980A3D9C253EFCC1E8FEB9D2D45731073BC8E0F1B376A0CFCF09671958165FE84E017E7411297198705992AB810602E739CD203809B7F1AA06ED13C2CC97EE29D3ED973A75F5120C88CDCF84232A0A91200E24F5B0A4D1201FE1A64085F782D052755D8BA62ACED85F2ADC6E9C432E43A8240E5A2ECDEFE3302460CF3CCD67D3B06C0355E858; "
 	searchValue = "*"
 	docNum =  docnum
 
@@ -77,43 +77,89 @@ def threading(docnum):
 	kommune_uten_sted = []
 
 	dok_navn_utenPDF = documentName.split(".")[0].replace("BV","")
-	print(dok_navn_utenPDF)
 
 	cur.execute("SELECT \"KommuneNavn\" FROM \"tbl_Rapportarkiv\" WHERE \"RappArkivNr\" = %s",(dok_navn_utenPDF,))
 	komm_i_rapport = cur.fetchall()
-	print(komm_i_rapport)
-	print(komm_i_rapport[0])
-	print(komm_i_rapport[0][0])
+	kom_li =[]
+	kom_sted = {}
+	
+	#dictonary for kommune(stedsnavn)
+	komm_i_rapport = komm_i_rapport[0][0].split("\n")
+	print(komm_i_rapport)	
+	for k in komm_i_rapport:
+		kom_li.append(k)
+		kom_sted[k] = None
 
-	for line in li:
-		
-		line = line.replace('\\n', ' ').replace('\\r', '').replace("\\","")
+	#check if already scanned
+	cur.execute("SELECT stedsnavn FROM data WHERE dok_id = %s",(documentId,))
+	isScanned = cur.fetchall()
+	if isScanned:
+		print("isScanned!! ")
+	
+	#if scanned only check stedsnavn againt kommune (avoids going thorugh line by line)
+	if isScanned:
+		cur.execute("SELECT mineraler FROM data WHERE dok_id = %s",(documentId,))
+		known_minerals = cur.fetchall()
+
+		for ko in kom_li:
+			cur.execute("SELECT sted.enh_snavn FROM sted, kommune WHERE sted.enh_snavn = '"+st+"' AND sted.enh_komm = kommune.enh_komm AND kommune.enh_snavn =  %s",(ko,))
+			data = cur.fetchall()
+			if data:
+				for d in data:
+					if d[0] not in stedsnavn and d[0] != ko:
+						print(ko)
+						stedsnavn.append(d[0])
+						kom_sted[ko]=d[0]
+	
+	#goes through line by line in document since it has not been scanned
+	else:
+		for line in li:
+			line = line.replace('\\n', ' ').replace('\\r', '').replace("\\","")
+
+			for mineral in mineraler:
+				if(mineral.lower() in line.lower() and mineral not in known_minerals):
+					known_minerals.append(mineral)
+
+			strings = line.split(" ")
+			for st in strings:
+					if st != "":
+						if sted_regex.match(st):
+								for ko in kom_li:
+									cur.execute("SELECT sted.enh_snavn FROM sted, kommune WHERE sted.enh_snavn = '"+st+"' AND sted.enh_komm = kommune.enh_komm AND kommune.enh_snavn =  %s",(ko,))
+									data = cur.fetchall()
+									if data:
+										for d in data:
+											isKey = kom_sted.get(d[0])
+											if not isKey and d[0] != ko and d[0] not in stedsnavn:
+												if kom_sted.get(ko) == None:
+													kom_sted[ko] = d[0]
+													stedsnavn.append(d[0])
+												else:
+													kom_sted[ko] += ", "+d[0]
+													stedsnavn.append(d[0])
 
 
-		#KJØR SELECT FOR Å HENTE REGISTRERT KOMMUNE FRA RAPPORT_ARKIV TABLE
-		#hvis det finnes gjør dette:
+	cur.execute("INSERT INTO new_data (dok_id,dok_navn) VALUES ('%s','" + str(documentName) + "')",([documentId]))
+	
+	for mineral in known_minerals:
+		cur.execute("UPDATE new_data SET mineraler = mineraler || '{" + mineral + "}' WHERE dok_id = %s",([documentId]))
 
-		for mineral in mineraler:
-			if(mineral.lower() in line.lower() and mineral not in known_minerals):
-				known_minerals.append(mineral)
-
-		strings = line.split(" ")
-		for st in strings:
-				if st != "":
-					if sted_regex.match(st):		
-							cur.execute("SELECT sted.enh_snavn FROM sted, kommune WHERE sted.enh_snavn = '"+st+"' AND sted.enh_komm = kommune.enh_komm AND kommune.enh_snavn =  %s",(komm_i_rapport[0]))
-							data = cur.fetchall()
-							if data:
-								for d in data:
-									# if d[1] not in kommuner:
-									# 	kommuner.append(d[1])
-									if d not in stedsnavn:
-										stedsnavn.append(d)
-	print(documentId)
-	print(stedsnavn)
+	for key in kom_sted:
+		insert_String = str(key)+"("+kom_sted.get(key)+")"
+		print(insert_String)
+		cur.execute("UPDATE new_data SET sted_i_kommmune = sted_i_kommmune || '{" + insert_String + "}' WHERE dok_id = %s",([documentId]))
 
 
-		#hvis ikke gjør det på gamle måten:
+	# print("\n")
+	# print(dok_navn_utenPDF)
+	# print(documentId)
+	# print(kom_li)
+	# print(kom_sted)
+	# print(stedsnavn)
+	# print(known_minerals)
+
+
+
 
 	# 	if kommune_regex.match(line):
 	# 		ny_line = line.split(" ")
@@ -200,7 +246,7 @@ if __name__ == '__main__':
 	start_doc = int(input("Start document: "))
 	end_doc = int(input("End document: "))
 
-	proc_li = list(range(start_doc, start_doc+end_doc))
+	proc_li = list(range(start_doc, 1+end_doc))
 
 	pool = Pool()
 	#pool = ThreadPool(number of cores..)
