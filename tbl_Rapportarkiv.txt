@@ -1,0 +1,210 @@
+1;"1";"248/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"ISSN 0332-7329-3";;;;"Kjemiske forhold i elvevann i Rogaland, Agderfylkene og Telemark m/fl";"Sivertsen, Albert
+Snekvik, Einar";"2103";"1979";"Direktoratet for vilt og ferskvansfisk";"Aust-Agder
+Vest-Agder
+Rogaland
+Telemark";;;;;"Miljø";"Rapport";;"Vann/ grunnvann";"Vann";
+2;"2";"395/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1650/55B";;;;"VLF-målinger Viosen";"Singsaas, Per";"2409";"1979";"USB";"Nord-Trøndelag";"18234";"Grong";"Snåsa";;"Geofysikk";"Rapport";"Viosen Drevsjøen Dravland";"Malm/metall";"Kis";"Kisen i Snåsafeltet kan karakteriseres som vasskis.
+Det ble målt i to områder som i rapporten har fellesbetegnelsen Viosen. Det første ligger 1 km nord for Agle jernbanestasjon, 8 - 10 km nordøst for Viosen.Feltet strekker seg 2.6 km i øst-nordøstlig retning fra østre ende av Drevsjøen til Burvasselva 500 m vest for Landsem. Det er tidligere røsket i en rekke punkter i dette strøket.
+Det andre feltet ligger 1 km nord for Dravlangårdene ca. 4 km nord-nordøst for Viosen. Målefeltet er 1 km langt, og strekker seg i vest-sørvestlig retning fra vestre ende av Bjørnsjøan.
+I begge de undersøkte områder ble det  påvist lange og til dels sterkt ledende soner.
+
+De utførte målinger har vist at VLF-metoden egner seg meget godt for kartlegging av lange, utgående vasskissoner."
+3;"3";;;"Trondheim";"Åpen";"Trondheimske";;;;;"Befaring av Nyseter kalkmølle";"Trygve Mikalsen";"2708";"1979";"Bergvesenet";"Nord-Trøndelag";"15221";"Trondheim";"Bjugn";;"Geologi";"Befaringsrapport";"Nyseter";"Industrimineral";"Kalkstein";"Med den nåværende produksjon ved Nyseter kalkmølle, er det nok råstoff i kalksonen hvor produksjonen idag foregår. Sonen kan følges ca. 400 m i NØ-retning, og i SV-retning er den avdekket i 30 m lengde. Hele partiet inneholder foldede amfibolitt-lag, men med den selekteve drift og håndskeiding som foregår, får en et kalkstensmel med mere enn 90% CaCO3 for salg.
+For de nærmeste år synes det derfor å være mest riktig å  følge samme sone med samme driftsmetode.
+Ved en eventuell økning av produksjonen har en foruten denne sonen, en større reserve like SV for Gjølja-elven  som ikke er så mye forurenset av amfibolittlag. Imidlertid vil en produksjon her kreve ekstra investeringer i nye transportmidler."
+4;"4";"202/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NIVA 0-77061";"NIVA";;;"Vannforurensning fra gruver - Killingdal.";"Arnesen, Rolf  Tore. Grande, Magne. Tjomsland, Torulv";"2002";"1979";"NIVA";"Sør-Trøndelag";"17204";"Røros";"Holtålen";;"Miljø";"Rapport";"Killingdal";"Vann/grunnvann";"Vann";"Rapporten omhandler vannforurensning fra gruveområder på Killingdal.  De ulike tilførselkildenes bidrag samt deres betydning for vannkvaliteten i Gaula blir vurdert. Mulige forurensningsbegrensende tiltak blir kommentert"
+5;"5";"202/1979 TB
+1209/1991 TB";;"Trondheim";"Åpen";"Trondheimske";"NIVA 0-77061";"NIVA";;;"Vannforurensning fra gruver. Røstvangen og Kjøli";"Arnesen, Rolf  Tore. Grande, Magne. Tjomsland, Torulv";"2504";"1979";"NIVA";"Sør-Trøndelag
+Hedmark";"17204 16194";"Røros";"Tynset
+Holtålen";;"Miljø";"Rapport";"Røstvangen
+Kjøli";"Vann/grunnvann";"Vann";"Rapporten omhandler vannforurensning fra de nedlagte gruveområder på Røstvangen ved Tynset og Kjøli i øvre del av Gaulavassdraget.  De ulike tilførselkildenes bidrag samt deres betydning for vannkvaliteten i vassdraget nedstrøms,  blir vurdert. Mulige forurensningsbegrensende tiltak blir kommentert."
+6;"6";;;"Trondheim";"Åpen";;;;;;"Lindvikskollen Rutilgrube ved Kragerø";"Schetelig, J.";"2501";"1917";"Mineralogisk- Geologisk museum";"Telemark";"17124";"Arendal";"Kragerø";;"Geologi
+Historie";"Rapport";"Lindvikskollen";"Industrimineral";"Rutil";
+7;"7";"247/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"ISSN 0332-7329/2";;;;"Kjemiske undersøkelser av Sira - Kvina. 1978";"Sivertsen, Albert
+Snekvik, Einar";"2103";"1979";"Direktoratet for vilt og ferskvannsfisk";"Vest-Agder ";;"Mandal";"Kvinesdal
+Sirdal";;"Miljø";"Rapport";;"Vann/grunnvann";"Vann";"Etter  avtale med Sira-Kvina Kraftselskap er det fra januar 1967 innsendt månedlige prøver (der det har være mulig) fra 10 lokaliteter i Kvina og 9 lokaliteter i Sira.
+I tillegg får vi prøver av Kvina og Litleåna i Kvinesdal og av Sira i Åna-Sira, samt av utløpet på Sirdalsvatn / tilløp til Lundevatn.
+Dette utgjør ialt 25 lokaliteter fra Sira pluss Kvina.
+
+"
+8;"8";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Grongfeltprospekteringen. Årsrapport for 1974";"Viggo H Wiik";"1501";"1975";"Grong Gruber A/S";"Nord-Trøndelag";"18241, 19241, 18234 18241";"Grong";"Grong, Røyrvik";"Ja";"Geologi geofysikk boring";"Rapport";"Visletten Rosset  Renselvann Borvasselva Skiftesmyr Godejord Tromselv (lille)";"Malm/metall";"Cu Zn W";"Kortfattet oersikt over prospekteringsarbeidene i Grongfeltet i 1974 "
+9;"9";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Grongfeltprospekteringen. Supplement til årsrapport for 1974";"Arve Haugen";"1502";"1975";"Grong Gruber A/S
+Skorovas gruber AS";"Nord-Trøndelag";"18241  18242  ";"Grong";"Grong";;"Geologi";"Rapport";"Skorovatn Tromselv (lille) Finnkjærringhullet";"Malm/metall";"Cu Zn";"Tilleggsrapport over de prospekteringsarbeidene som Skorovas gruber har stått for i Grongfeltet i 1974 .
+Se BV rapp 8."
+10;"10";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Rapport vedrørende statsstøttet prospekteringsarbeide 1976.
+Skiftesmyr - Rossetfeltet.";"Arve Haugen";"26";"1977";"Grong Gruber A/S";"Nord-Trøndelag";"18234";"Grong";"Grong";;"Geologi  Boring";"Prospekteringsfondet";"Skiftesmyr
+Rosset ";"Malm/metall";"Cu Zn Kis";"Ca. 600m malm-akselengde er rekognosert med boringen. Resultatene viser en mineralisert plate som dels fører massiv malm, dels en rik impregnsjon, men varierer i mektighet mellom 0.18 og 2.20 m.
+Gehaltene er også variable, men i alt vesentlig ligger de på 0.40% Cu og 1% Zn.
+Dette gir inntrykk av en tynn malmplate med undulerende mektighet, kanskje også avbrutt her og der. Borprofilene viser at den har et konstant østlig fall på 25 - 30 grader. Utstrekningen langs malmaksen kan være langt forbi bh 7.
+
+Borresultatet i Rossetfeltet var skuffende fordi man ut fra de geofysiske indikasjoner syntes å ha betydelige ledere. Boringen har klarlagt at leder finnes. Den har elektrisk ledningsevne god nok til å forklare anomalien. Den har ikke mektigheter eller gehalter som gjør den interessant. Det er liten grunn til å tro at man innen borfeltet har unngått å treffe aktuelle malmer med noen utbredelse.
+Det synes derfor sannsynlig at  Rosset-feltet ikke fører mineraliseringer som er av økonomisk interesse.
+
+Det  pekes likevel på at det innen Rosset-feltet i noe utvidet forstand, ennå finnes  selvstendige CP- og TURAM-anomalier som ikke er undersøkt.
+"
+11;"11";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Rapport vedrørende statsstøttet prospekteringsarbeide 1976.";"Haugen, Arve";"26";"1977";"Grong Gruber A/S";"Nord-Trøndelag";"18241";"Grong";"Røyrvik";;"Geologi Geofysikk";"Prospekteringsfondet";"Visletten skjerp";"Malm/metall";"Cu Zn";"CP-målingen har gitt et mer oversiktlig bilde av denne sulfidforekomsten, men det er ennå uklare forhold, spesielt i forbindelse med den mulige sammenhengen mellom skjerpesonen og den nordre sone. Man har fått en antydning om hvilken feltdragning sonene har. Skjerpesonens forløp mot dypet er usikkert.
+
+Søndre sone og  skjerpesonens ledningsevne er godt kartlagt. I tillegg til den boring som allerede er utført, vil det nå være mulig å plassere ytterligere borhull på en slik måte at mineraliseringen blir nøyaktig og riktig undersøkt, både der malmpotensialet er stort og for å undersøke usikre punkt på sonen.
+"
+12;"12";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Renselvann området 1976";"Haugen, Arve";"26";"1977";"Grong Gruber AS";"Nord-Trøndelag";"19241";"Grong";"Røyrvik";;"Geofysikk";"Prospekteringsfondet";"Renselvann Renselvatn";"Malm/metall";"Cu Kis";"CP-målingen gav en rekke interessant opplysninger om de strukturelle forhold og anomaliens utbredelse ved Renselvann. Den aktuelle strøklengde synes klarlagt, dernest at det dreier seg om to adskilte ledende soner, som hver for seg består av flere VLF-soner. Mest markert er dette ved den Nordlige sonen hvor den påviste grunne skålform kunne etterspores og bekreftes ved de påfølgende boringer.
+CP-målingen ga også beskjed om ledningsevneforholdene og en ganske eksakt utbredelse av den mineraliserte skål. Ytterligere boringer i området kan på grunnlag av CP-målingen utføres med relativt stor sikkerhet for å treffe det mineraliserte nivå.
+
+Selv om det  ved Grong Grubers egne VLF-målinger ennå ikke er kommet frem nye mineraliseringer av samme type som ved Renselvann, er en del av måleindikasjonene ikke ferdig undersøkt. En kraftig   svovelkis-impregnasjon viste seg å ligge i en eldre bergsrtsformasjon enn kalkfyllitten. De indikasjoner der anomaliårsaken er påvist, har vist seg være grafittisk fyllitt. Man har hittil ikke sett spor av tungmetallførende mineraliseringer.
+
+Kalkfyllitten har en stor utbredelse og det er store områder som ennå ikker er undersøkt. Derfor vil man fortsette målingene i dette spesielle stratigrafiske nivå. Størst vekt vil bli lagt der bergarten er mektigst.
+
+"
+13;"13";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Finnburfeltet 1976";"Haugen, Arve";"26";"1977";"Grong Gruber A/S";"Nord-Trøndelag";"18231";"Grong";"Grong";;"Geofysikk";"Prospekteringsfondet";"Finnbur grube Finnbu";"Malm/metall";"Cu Zn Kis";"CP-målingen har gitt et godt inntrykk av de ledere det ble satset på og jordet i.
+Resultatet av målingene viser at skjerpesonen ved Finnbur Grube har ubetydelg dyp-utbredelse, mens Nordgangen har en beregnet større, men mer usikker utstrekning mot dypet.
+
+Nordgangens ledningsevne langs strøket er blitt godt  kartlagt, og særlig øst for skjerpet er ledningsevnen god. I samme område er det påvist en forskyvning av anomalien i forhold til TURAM-målingen. Dette er tolket som en lokal bøy på sonen. Felles for begge skjerpesoner er at de synes å ha sin ene begrensning ved en forkastning som går gjennom området, Finnbur Grube begrenset av den i  sin østende og Nordgangen i sin vestende.
+
+CP-målingene viser forøvrig stor overenstemmelse med de andre TURAM-ledere som ligger nær jordingssonene.
+
+På grunnlag av CP-målingene, vil det nå være betydelig lettere å plassere de borhull som må til for å få evaluert malmpotensialet i Finnbur-feltet. Det synes som man må konsentrere seg om Nordgangen, eventuelt et dyp-reknognoserende hull under Finnbur Grube."
+14;"14";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";;"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Løvsjøli og Musutangen 1976";"Haugen, Arve";"26";"1977";"Grong Gruber A/S";"Nord-Trøndelag";"19234";"Grong";"Lierne";;"Boring";"Prospekteringsfondet";"Løvsjøli Lausjøli Musutangen";"Malm/metall";"Cu Kis";"På Løvsjøli er anomaliårsaken i de tre geofysiske drag påvist. Den blottede kobber/magnetkis-
+mineraliseringen viser seg raskt  forsvinne mot dypet. Et skyveplan gjennom området kan være årsak til denne lokale konsentrasjonen. De to andre sonene definerer helt ubetydelige mineraliseringer.
+Boringen på Løvsjøli synes derfor nå å ha slått fast at de kjente indikasjoner ikke er av økonomisk betydning.
+
+På Musutangen har tolkningen av boredatata mot de gefysiske data vist seg meget komplisert. Det har også vist seg at PI-målebildet er anomalt i forhold til den geologiske tolkning. Etter konferans med NGU har man fått flått fast at målebildet likevel er forenlig med den geologiske tolkning. Når det gjelder tolkning av boreresultatene, synes det rimelig å anta at hornblenditten med sitt lille ilmenitt-innhold er årsak til de to geofysiske anomaliene (IP5 og IP8) som er undersøkt.
+
+Man har altså ved boring klargjort anomaliårsaken  på et par av anomaliene. Det var uheldig at man ikke kom ned på IP9 med et borhull. Denne indikasjonen bør undersøkes videre før Musutangenfeltet forlates. De øvrige anomalier i feltet synes å være av samme type som de to som er undersøkt."
+15;"15";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"1/78";"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Rapport 1/78, Borvasselv ";"Haugen, Arve";"204";"1979";"Grong Gruber A/S";"Nord-Trøndelag";"19241";"Grong";"Røyrvik";"Ja";"Boring";"Prospekteringsfondet";"Borvasselv";"Malm/metall";"Cu Zn";"Undersøkelsesopplegget tok sikte på å avgjøre om feltet kunne vise en mineralisering som kunne være interessant. I et område der grafitt-fyllitt overskygger all geofysisk respons fra sulfidiske ledere, var det meget vanskelig på forhånd å vurdere CP-anomalien.
+
+Mineraliseringen har en utstrekning. Dens utgående er ganske ulik det man finner i hullene. Skjerpet viser en smal sone Cu-magnetkis, mens hullene har påvist en ganske mektig (10 - 15m) mineralisert sone hvor også massiv sulfidmalm av vanlig type finnes. Mineraliseringen er karakterisert av ganske høyt Zn-innhold.
+
+Det antas at vulkanittene tilhører samme stratigrafiske nivå som Joma-grønnsten, og mineraliseringen har mange likhetstrekk med Joma-malmen.
+
+Som innledende undersøkelse, må boreresultatene betgnes som lovende og ytterligere boring vil være nødvendeg."
+16;"16";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"3/78";"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Prosjekt 3/78, Visletten";"Haugen, Arve";"204";"1979";"Grong Gruber A/S";"Nord-Trøndelag";"18241";"Grong";"Røyrvik";;"Geofysikk";"Prospekteringsfondet";"Visletten";"Malm/metall";"Kis";"Undersøkelsen har løst noen av de problemer man har med tolkningen av strukturene i feltet, men forholdene er ennå ikke på langt nær oversiktlige nok.
+
+Den generelle konklusjon på CP-målingen antyder at lederne har en ganske flat dragning i felt retning 130g. Dette gjelder spesielt søndre sone.
+
+Om dette er riktig er muligetene til ytterligere malmmengde vest for elven mindre. Tyngdepunktet vil da ligge øst for elven og potensielle malmmengder må lokaliseres her.
+
+Dette er en problemstilling som må løses. Det legges derfor videre opp til en detaljert geologisk kartlegging og en TURAM-måling, som har større dyprekkevidde enn de tidligere benyttede metoder. Det geologiske opplegget vil da gi en bedre korrelering av geofysikk- og borhullsdata."
+17;"17";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"4/78";"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Prosjekt  4/78, Hausvik";"Arve Haugen";"204";"1979";"Grong Gruber A/S";"Nord-Trøndelag";"18242 19243";"Grong";"Røyrvik";;"Boring";"Prospekteringsfondet";"Hausvika";"Malm/metall";"Cu Zn Kis";"Ved denne undersøkelsen har man fått vurdert de kvalitets- og kvantitetsmuligheter et par av de beste TURAM-indikasjonene har i feltet. Det finnes flere geofysiske lederere i denne del av Hausvikfeltet, men vi har ikke noen holdepunkt for at undersøkelsene av disse vil gi andre resultater enn de som er kommet frem her.
+
+Ingen av TURAM-indikasjonene ga ved boring mot dypet massiv mineralisering. Det ser ut som sonene har kort utstrekning langs fallet. Likeså synes flere av sonene være grunne synklinaler. Dessuten har mineraliseringen i hullene ikke spor av Cu og Zn.
+
+Hausviksonene synes ikke ha interesse i den videre malmleting."
+18;"18";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"5/78";"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Prosjekt 5/78, Skiftesmyr";"Arve Haugen";"204";"1979";"Grong Gruber A/S";"Nord-Trøndelag";"18234";"Grong";"Grong";;"Boring";"Prospekteringsfondet";"Skiftesmyr";"Malm/metall";"Kis";"Målet for undersøkelsen ble ikke nådd i den forstand at man ikke fikk påvist et større malmareal. Derimot fikk man begrenset det området man videre må arbeide med. Man har med boringen, tross alt kunnet fastslå den omtrentlige begrensning av Skiftesmyr-sonens strøk mot vest.
+
+Ytterligere boring må utføres, men man vet i hvilket område nye hull må settes. Dessuten er årets borresultat nyttig, idet det avgrenser det området som i løpet av et års tid må belegges med utmål.
+
+Det skal nevnes at man i en hengsone boret gjennom en ca. 5m mektig magnetkisimpregnasjon. Denne er imidlertid tungmetallfri og uinteressant."
+19;"19";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"6/78";"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Prosjekt 6/78, Finnbur";"Arve Haugen";"204";"1979";"Grong Gruber A/S";"Nord-Trøndelag";"18231";"Grong";"Grong";;"Boring";"Prospekteringsfondet";"Finnbur gruve Finnbu";"Malm/metall";"Cu Zn Kis";"Man har ved denne undersøkelsen fått vurdert flere av de geofysiske hovedanomalier i området.
+
+Boringene synes å fastslå at Nordgangen ikke har malm-mektigheter som kan gjøre denne interessant, selv om gehaltene i og for seg er interessante. Man skal dog være oppmerksom på den uregelmessige utvikling denne sonen har mot dypet.
+
+Finnbur-sonen er mye mer interessant. Her bør det bores mer, både mot dypet og langs strøkretningen.
+
+Boringene har vist at det er all grunn til å regne med at de andre geofysiske indikasjoner i feltet skyldes uøkonomiske mineraliseringer av  pyritt og magnetkis.
+
+Til tross for Finnbur-sonen, kan det neppe være snakk om store malmkvanta i feltet , og det er vel sannsynlig at malm her må sees i sammenheng med andre forekomster nært ved."
+20;"20";"273/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"7/78";"Industridepartementet";;;"Rapport vedr. statstøttet prospekteringsarbeide. Prosjekt 7/78, Godejord";"Arve Haugen";"204";"1979";"Grong Gruber A/S";"Nord-Trøndelag";"18234";"Grong";"Grong";;"Boring 
+Geofysikk";"Prospekteringsfondet";"Godejord";"Malm/metall";"Cu Zn Ag Au";"Boringen har brakt ytterligere opplysninger om malmsonens kvalitet og kvantitet, men flere spørsmål er ennå uløste.
+
+Imidlertid synes det helt klart at den del av IP-indikasjonen som ligger vest for bh 1/74 (bilag 1), neppe har noen økonomisk interesse.
+
+På østenden av sonen er forholdene åpne med god minerlisering i siste borhull. Vi har geofysiske indikasjoner som kan tyde på at sonen kan strekke seg ytterligere 700m mot øst, men måleforholdene er her komplisert av en høyspentlinje som vanskeliggjør en geologisk tolkning.
+
+Mot dypet ser det ut som kvalitet og mektighet avtar, men det er lite data som konfirmerer dette.
+
+I sum ser der imidlertid ut som skjerpeområdet består av flere smale linser, med liten mektighet, men med ganske rik mineralisering. I gjennomsnitt er gehalten over 2m 0.4% Cu og 2.65% Zn, men med partier som er mye rikere.
+
+Men med de mektigheter som hittil er påvist, ser det ikke ut som det er store malmtonnasjer tilstede. For å få bedre kjennskap til dette er der ennå behov for boring mot dypet og langs strøket mot øst."
+21;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-2";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer ved Kumle, Sætre og Vilnes.";"Ryghaug, Per";"612";"1977";"NGU";"Sogn og Fjordane";"11174";"Florø";"Askvoll";;"Geologi";"Rapport";"Kumle  Sætre Vilnes";"Bygningstein";"Skifer";"Tre eldre skiferbrudd på Atløy antas å ligge langsetter samme lag av en forskifret meta-arkose. 
+
+For dårlige og uregelmessig utviklete spalteegenskaper er den avgjørende årsak til at en ikke kan regne med regningssvarende drift idag. Endel villheller og tykkere stein til murer kan fortsatt utnyttes lokalt, men uten at det i den forbindelse er grunnlag for noen kontinuerlig drift."
+22;"21";"271/1979 TB";"Rapportarkivet";"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein.
+Sammendrag og innholdsfortegnelse NGU 1560/11A 1- 10  (BV 21A-J)";"Ryghaug, Per";;"1977";"NGU";"Sogn og Fjordane";;"Florø  Årdal";"Askvoll, Fjaler, Flora, Gloppen, Hyllestad, Stryn, Leikanger, Årdal, Luster, Sogndal  
+";;"Geologi";"Rapport";;"Bygningstein";"Skifer";"Vestlandsprogrammet. Undersøkelse av bygningstein.
+Sammendrag og innholdsfortegnelse NGU 1560/11A 1- 10  (BV 21A-J)
+
+I forbindelse med NGU's Vestlandsprogramm, hvor en er igang med registreringer og undersøkelser av forekomster av malmer, industrielle mineraler og byggeråstoffer, befarte en tilsammen 19 ""skifer""-forekomster fordelt over 10 kommuner i Sogn ogFjordane fylke.
+
+Sletterust skiferfelt, Årdal kommune, ble viet spesiell oppmerksomhet ettersom det her forelå langt fremskredne planer om iverksetting av drift.
+
+NGU vil anbefale prøvedrift  på forekomsten.
+
+Skiferlagene innen Stryn og Gloppen kommune er interessante og en vil ikke se bort fra at en ved ytterligere undersøkelser kan komme over drivverdige skiferfelter.
+
+I resten av de undersøkte forekomstene er ikke skiferen drivverdig med tanke på en regulær skiferdrift. Enkelte av disse kan imidlertid fortsatt gi villheller og grovere murstein for lokalt behov ved en leilighetsvis smådrift.
+"
+23;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-3";;;;"Vestlandsprogrammet. Undersøkelse av byggningstein. Skifer ved Bakke og Eikenes.";"Ryghaug, Per";"612";"1977";"NGU";"Sogn og Fjordane";"11171";"Florø";"Fjaler";;"Geologi";"Rapport";"Bakke, Eikenes";"Bygningstein";"Skifer";"To tidligere registrerte bruddområder i Fjaler kommune ligger tilnærmesvis langs fortsettelsen av skiferlaget hvor en på Atløy, Askvoll kommune også har eldre skiferbrudd.
+Lokaliteten ble befart i forbindelse med Vestlandsprogrammet ved NGU.
+Skiferen ved Bakke har ikke de tilstrekkelige spalteegenskaper til i dag å kunne betraktes som drivverdig.
+Ved Eikenes var det tidligere bruddområdet bygget ned av en ny gårdsvei."
+24;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-4";;;;"Vestlandsprogrammet. Undersøkelse av byggningstein. Bygningstein ved Lykkjebø.";"Per Ryghaug";"712";"1977";"NGU";"Sogn og Fjordane";"12183";"Florø";"Flora";;"Geologi";"Rapport";"Lykkjebø";"Bygningstein";"Kvartsitt Skifer";"Den feltspatiske kvartsitten i dette området har vært brukt som forblendingsstein i grovere murer, hvilket det  fortsatt er en del forespørsel etter. I forbindelse med NGU´s Vestlandsprogram ble forekomsten undersøkt med sikte på å klarlegge hvorvidt denne kunne utnyttes ytterligere.
+
+Det ble ikke registrert lokaliteter store nok for en permanent drift i tilstrekkelig størrelse, da den dominerende del av bergarten er sterkt foldet. Selv om området inneholder endel stein som kan utnyttes til dette formål, er det et åpent spørsmål om denne kan drives regningssvarende selv med en mindre leiligsvis drift av grunneierne.
+ "
+25;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-5";;;;"Vestlandsprogrammet. Undersøkelse av byggningstein. Skifer ved Allmenning,  Dale Hunskor og Sagefloten.";"Ryghaug, Per";"901";"1978";"NGU";"Sogn og Fjordane";"13183 13184";"Årdal";"Gloppen";;"Geologi";"Rapport";"Allmenning  Dale Hunskor  Sagefloten";"Bygningstein";"Skifer";"I dette området har det vært periodevis skiferdrift fra århundreskiftet og frem til idag.
+Tidligere berggrunnskartlegging har vist at  disse forekomstene kan settes i forbindelse med lignende skiferbrudd ved Ulvik i Stryn kommune.
+
+Ingen av de undersøkte forekomstene kan sies å ha tilstrekkelige mengder med godt spaltbar skifer for en kontinuerlig drift. Flere av bruddområdene og skiferlaget forøvrig inneholder imidlertid fortsatt skifer som kan utnyttes ved leilighetsvis smådrift av den type som endel av grunneierne praktiserer i dag."
+26;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-6";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer ved Kvimsen.";"Ryghaug, Per";"1001";"1978";"NGU";"Sogn og Fjordane";"11172";"Florø";"Hyllestad";;"Geologi";"Rapport";"Kvimsen";"Bygningstein";"Skifer";"Forekomsten er ikke funnet. Lokalbefolkningen hadde heller ikke kjennskap til den. En bør ut fra dette gå ut i fra at den registrerte lokalitet er helt uten økonomisk interesse."
+27;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-7";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer ved Leikanger.";"Ryghaug, Per";"1001";"1978";"NGU";"Sogn og Fjordane";"13172";"Årdal";"Leikanger";;"Geologi";"Rapport";"Leikanger";"Bygningstein";"Skifer";"I forbindelse med NGU´s Vestlandsprogram befarte en et eldre skiferbruddområde i selve Leikanger   som ble drevet i tiden før århundreskiftet og i et ukjent antall år fremover.
+
+Den delen av skiferbergarten som lar seg bearbeide til skiferprodukter er av liten mektighet og overlagres av store overfjellsmasser. Videre ligger bruddområdet rettovenfor et nytt boligområde. Med bakgrunn i dette anser en forekomsten for å være uten økonomisk interesse."
+28;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-8";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer i Dalsdalen og ved Urnes.";"Ryghaug, Per";"1101";"1978";"NGU";"Sogn og Fjordane";"14171 14174";"Årdal";"Luster";;"Geologi";"Rapport";"Dalsdalen Urnes";"Bygningstein";"Skifer";"Registrerte skiferbrudd fra århundreskiftet er befart i Dalsdalen og ved Urnes i forbindelse med NGU´s
+Vestlandsprogram.
+
+I Dalsdalen er det fortsatt endel skiferstein tilbake i bruddene som kan utnyttes som villheller og tykkere forblendingsstein i lokalsamfunnet. Skiferlagets beskaffenhet og beliggenhet utelukker imidlertid regningssvarende drift i en kontinuerlig og ordinær driftsform.
+
+Ved Urnes er det ikke observert drivverdige skiferlag."
+29;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-9";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer ved Songdalsdalen og Øfstedalen.";"Ryghaug, Per";"1201";"1978";"NGU";"Sogn og Fjordane";"13172 14174";"Årdal";"Songdalen";;"Geologi";"Rapport";"Songdalsdalen Øfstedalen";"Bygningstein";"Skifer";"Ved århundreskiftet ble det revet takheller på en rekke steder ved Sogndalsdalen og på et sted innerst i Øfstedalen. Lokalitetene ble befart i forbindelse med NGU´s Vestlandsprogram.
+
+Som følge av utilstrekkelige spalteegenskaper, liten mektighet, hyppige folder og ugunstig beliggenhet er ingen av de befarte bruddområder å betrakte som drivverdige i dag."
+30;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-10";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer ved Moldeim, Tisthammar og Saltkjelen.";"Ryghaug, Per";"1201";"1978";"NGU";"Sogn og Fjordane";"13184";"Årdal";"Songdalen";;"Geologi";"Rapport";"Moldreim Tisthammar Saltkjelen";"Bygningstein";"Skifer";"Langsmed sydsiden av Nordfjorden, vest for Ulvik, har det vært skiferdrift fra århundreskiftet og periodevis frem til i dag. I 1970 gjennomførte A/S Granitt, Oslo en prøvedrift i området. NGU befarte forekomstene i forbindelse med Vestlandsprogrammet. Bruddet ved Saltkjelen var tidligere befart av NGU i 1971.
+
+Innenfor et skiferlag på 3 - 4m mektighet lar skiferen seg spalte i tilfredsstillende tykkelse (1 - 3cm).  Laget er imidlertid sterkt oppsprukket  og overlagres av for store mengder fjell.
+
+I Bruddområdet mellom Moldreim og Tisthammar er det kun mindre mengder lett tilgjengelig skifer tilbake. Regningssvarende drift synes å være utelukket  p.g.a. de store overfjellsmasser. Ved å følge opp laget videre mot NV er det mulighet for å finne frem til et bedre egnet bruddområde.
+
+Forekomsten ved Saltkjelen kan muligens utnyttes økonomisk ved en enkel drift i beskjeden målestokk. Dette kan imidlertid bare avklares nærmere ved en prøvedrift."
+31;"21";"271/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11A-1";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Sletterust skiferfelt.";"Ryghaug, Per";"612";"1977";"NGU";"Sogn og Fjordane";"15174";"Årdal";"Årdal";;"Geologi";"Rapport";"Sletterust";"Bygningstein";"Skifer";"Det forelå planer om igangsetting av drift i et nedlagt skiferfelt ved Sletterust. Feltet ble befart ved to anledninger, siste gang etter at en anbefalt prøvedrift nærmet seg slutten. 
+
+Observasjonene i feltet hemmes av løsmasseoverdekning. Prøvebrytningen ble dessuten ikke så omfattende som foreslått, og ettersom skiferkvaliteten er sterkt vekslende, har en ikke den fulle oversikt over drivverdigheten av forekomsten.
+
+Feltet inneholder 2 større skiferlag som er observert i henholdvis 12m og 6m mektighet og er adskilt av en ca. 45m mektig, ikke drivverdig sone. Det underste (på ca. 12m) er det mest lovende laget.
+
+NGU anbefaler en utvidet prøvedrift på dette laget , og helst i første omgang å foreta for store investeringer på bearbeidingssiden inntil en kjenner bedre til drivverdigheten av laget og hva det vil gi av produkter."
+32;"22";"272/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11B-1";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Bygningstein ved Hanøy, Kolavåg og Frommereid.";"Ryghaug, Per";"1301";"1978";"NGU";"Hordaland";"11151 11163 11154";"Bergen";"Askøy";;"Geologi";"Rapport";"Hanøy Kolavåg Frommereid";"Bygningstein";"Granitt";"På Askøyb ligger en rekke nedlagte granitt-brudd hvor det er tatt ut blokkstein hovedsakelig til havneutbyggingen i Bergen by. Flere av disse ble befart i forbindelse med NGU´s Vestlandsprogram for 1977.
+
+Bergarten er en benket, gråfarget granittisk gneis, og er ikke av en slik kvalitet at det ved regulær drift er aktuelt å utnytte den som bygningstein i dag."
+33;"22";"272/1979 TB";"Rapportarkivet";"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11B";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein.
+Sammendrag og innholdsfortegnelse NGU 1560/11B 1-13 ( BV 22A-M)";"Ryghaug, Per";;"1978";"NGU";"Hordaland";;;"Askøy, Austevoll, Bergen, Etne, Fusa, Jondal, Kvam, Kvinnherrad, Sveio, Tysnes, Ullensvang, Ulvik, Vaksdal,";;"Geologi";"Rapport";;"Bygningstein";"Granitt";"Vestlandsprogrammet. Undersøkelse av bygningstein. Sammendrag og innholdsfortegnelse NGU 1560/11B 1-13 ( BV 22A-M)
+I forbindelse med NGU's Vestlandsprogram, hvor en er igang med registreringer og undersøkelser av forekomster av malmer, industrielle mineraler og byggeråstoffer, befarte en i 1977 tilsammen 28 ""skifer""-forekomster og 8 ""granitt""forekomster fordelt over 13 kommuner i Hordaland fylke.
+Blandt de undersøkte forekomstene av skifer skilte Solesnes skiferbrudd i Jondal kommune seg ut som det mest interessante. NGU vil anbefale en detaljert geologisk kartlegging av skifersonens forløp og en kvalitetsvurdering av denne.
+Videre har en anbefalt en oppfø1ging av skifersonen ved Austestad-Eikeland.
+
+Enkelte bruddomrader er fortsatt i leilighetsvis smadrift og trolig er dette den eneste driftsformen som idag kan utnytte disse forekomstene regningssvarende.
+Den dominerende del av forekomstene blir imidlertid a betrakte som ikke drivverdige idag.
+Flere av granittbruddene representerer tidligere brytning av bandete gneiser som ble benyttet til bygging av kaianlegg. Denne anvendelsesmaten er lite aktuell idag og bergarten er mindre interessant som bygningsstein idag.
+En grønnrødlig og rødlig granitt fra Hope på Reksteren fremtrer som interessant og bør undersøkes nærmere.
+"
+34;"22";"272/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11B-2";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Bygningstein ved Huftarøy.";"Ryghaug, Per";"2903";"1978";"NGU";"Hordaland";"11152";"Bergen";"Austvoll";;"Geologi";"Rapport";"Huftarøy";"Bygningstein";"Granitt";"På Huftarøy og på små øyer vestenfor Huftarøy ligger en rekke nedlagte granittbrudd. Disse ble befart av NGU i forbindelse med NGU´s Vestlandsprogeam i 1977. Bergarten er en lys grå til svakt rødlig granitt som ligner mye på Iddefjordgranitt. Den er overveiende massiv og tar polering på en tilfredsstillende måte.
+
+Granitten i og ved de eldre bruddene ansees for ikke drivverdig i dag p.g.a. liten topografi, ugunstig beliggenhet og tildels skjemmende oppsprekning.
+
+En kan imidleritd ikke se bort ifra at en ved mer omfattende undersøkelser på Huftarøy kan finne frem til drivverdige forekomster.
+
+En mørkegrønn kvartsdioritt, somstedvis har porfyrisk utvikling, bør også vurderes nærmere for eventuell økonomisk utnytting."
+35;"22";"272/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11B-3";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Bygningstein ved Helledal, Krokeidet og Laksevåg.";"Ryghaug, Per";"2102";"1978";"NGU";"Hordaland";"11151 11152";"Bergen";"Bergen";;"Geologi";"Rapport";"Helledal Krokeidet Laksevåg";"Bygningstein";"Granitt";"Innenfor Bergen kommune er det registrert en skiferforekomst ved Helldal og to nedlagte granitt-brudd ved henholdsvis Krokeidet og Laksevåg. Forekomstene ble befart i forbindelse med NGU´s Vestlandsprogam.
+
+Ved Helldal kunne en registrere flere store og små lokaliteter hvor det  tidligere ble tatt ut skiferstein. Ingen kan sies å være drivverdige idag, selv om det  fortsatt er stein tilbake som kan nyttes til grovere murer og villheller.
+
+Ingen av de ot granittbruddene kan drives i dag, da det senere er bygget boliger i området."
+36;"22";"272/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11B-4";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Øvernes skiferbrudd.";"Ryghaug, Per";"2102";"1978";"NGU";"Hordaland";"12142";"Haugesund  Sauda";"Etne";;"Geologi";"Rapport";"Øvernes";"Bygningstein";"Skifer ";"Ved nordvestsiden av Stordalsvatnet har det i et skifrig parti i en meta-basaltsone vært skiferdrift fra århundreskiftet og frem til i dag. I årene etter 1955 kun leilighetsvis drift av grunneierens familie.
+NGU befarte forekomsten i forbindelse med Vestlandsprogrammet for 1977.
+
+På grunn av sterk oppsprekning og uregelmessige spalteegenskaper vil en drift i større omfang ikke være regningssvarende. Den type ""bondedrift"" som idag pågår, representerer en optimal utnyttelse av steinen ,
+og en fikk opplyst at denne driftsformen gav tilfredsstillende resultat."
+37;"22";"272/1979 TB";;"Trondheim";"Åpen";"Trondheimske";"NGU 1560/11B-5";;;;"Vestlandsprogrammet. Undersøkelse av bygningstein. Skifer ved Austested, Eikeland, Dalland, Djupvik, Ljotun, Berge, Bolstad, Kilen, Tveita, Skogseid og Teigland ";"Ryghaug, Per";"2202";"1978";"NGU";"Hordaland";"12151 12152 12153";"Odda  Bergen";"Fusa";;"Geologi";;"Austested Eikeland Dalland Djupvik Ljotun Berge Bolstad Kilen Tveita Skogseid Teigland ";"Bygningstein";"Skifer ";"Innen Fusa kommune ligger en rekke eldre skiferbrudd som hovedsakelig opptrer i samme bergartsformasjon. 11 skiferforekomster ble befart av NGU i forbindelse med det oppsatte Vestlandsprogrammet for 1977.
+
+De fleste må ansees som ikke drivverdige idag selvom en for endel av forekomstene kan tenke seg en fortsatt utnyttelse i form av leilighetsvis smådrift for lokalt bruk.
+
+En vil anbefale en oppfølging av skiferdraget ved Austestad- Eikeland og videre utover langs Eikelandsfjorden for om mulig å finne frem til et bruddområde med gunstigere driftsmessig beliggenhet.
+"
