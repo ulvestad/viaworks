@@ -1,0 +1,12 @@
+4 [2835913, BV5988H.pdf] scanned sucesfully. Result stored in 'data' table.
+3 [2836020, BV7188H.pdf] scanned sucesfully. Result stored in 'data' table.
+2 [2835986, BV6900.pdf] scanned sucesfully. Result stored in 'data' table.
+3 [2836020, BV7188H.pdf] scanned sucesfully. Result stored in 'data' table.
+1 [2835569, BV2013.pdf] scanned sucesfully. Result stored in 'data' table.
+4 [2835913, BV5988H.pdf] scanned sucesfully. Result stored in 'data' table.
+8 [2830730, 2378.pdf] scanned sucesfully. Result stored in 'data' table.
+6 [2834398, 6069.pdf] scanned sucesfully. Result stored in 'data' table.
+7 [2831984, 3659.pdf] scanned sucesfully. Result stored in 'data' table.
+5 [2835825, BV4670H.pdf] scanned sucesfully. Result stored in 'data' table.
+9 [2830729, 2377.pdf] scanned sucesfully. Result stored in 'data' table.
+10 [2830727, 2376.pdf] scanned sucesfully. Result stored in 'data' table.
