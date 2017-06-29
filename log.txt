@@ -10,3 +10,48 @@
 5 [2835825, BV4670H.pdf] scanned sucesfully. Result stored in 'data' table.
 9 [2830729, 2377.pdf] scanned sucesfully. Result stored in 'data' table.
 10 [2830727, 2376.pdf] scanned sucesfully. Result stored in 'data' table.
+1 [2835569, BV2013.pdf] scanned sucesfully. Result stored in 'data' table.
+4 [2835913, BV5988H.pdf] scanned sucesfully. Result stored in 'data' table.
+3 [2836020, BV7188H.pdf] scanned sucesfully. Result stored in 'data' table.
+2 [2835986, BV6900.pdf] scanned sucesfully. Result stored in 'data' table.
+5 [2835825, BV4670H.pdf] scanned sucesfully. Result stored in 'data' table.
+6 [2834398, 6069.pdf] scanned sucesfully. Result stored in 'data' table.
+7 [2831984, 3659.pdf] scanned sucesfully. Result stored in 'data' table.
+8 [2830730, 2378.pdf] scanned sucesfully. Result stored in 'data' table.
+10 [2830726, 2375.pdf] scanned sucesfully. Result stored in 'data' table.
+9 [2830729, 2377.pdf] scanned sucesfully. Result stored in 'data' table.
+16 [2830498, 2151.pdf] scanned sucesfully. Result stored in 'data' table.
+14 [2830725, 2374.pdf] scanned sucesfully. Result stored in 'data' table.
+15 [2830496, 2150.pdf] scanned sucesfully. Result stored in 'data' table.
+13 [2830724, 2373.pdf] scanned sucesfully. Result stored in 'data' table.
+17 [2830720, 2369.pdf] scanned sucesfully. Result stored in 'data' table.
+18 [2830722, 2370.pdf] scanned sucesfully. Result stored in 'data' table.
+19 [2830723, 2371.pdf] scanned sucesfully. Result stored in 'data' table.
+20 [2830494, 2149.pdf] scanned sucesfully. Result stored in 'data' table.
+21 [2835313, 896-1.pdf] scanned sucesfully. Result stored in 'data' table.
+22 [2835318, 896-2.pdf] scanned sucesfully. Result stored in 'data' table.
+23 [2835351, 937.pdf] scanned sucesfully. Result stored in 'data' table.
+24 [2835303, 886.pdf] scanned sucesfully. Result stored in 'data' table.
+25 [2835260, 839-1.pdf] scanned sucesfully. Result stored in 'data' table.
+26 [2835262, 839-2.pdf] scanned sucesfully. Result stored in 'data' table.
+27 [2835253, 833-1.pdf] scanned sucesfully. Result stored in 'data' table.
+28 [2835254, 833-2.pdf] scanned sucesfully. Result stored in 'data' table.
+12 [2830728, 2372.pdf] scanned sucesfully. Result stored in 'data' table.
+16 [2830498, 2151.pdf] is already scanned. Ignored.
+14 [2830725, 2374.pdf] is already scanned. Ignored.
+10 [2830726, 2375.pdf] scanned sucesfully. Result stored in 'data' table.
+17 [2830720, 2369.pdf] is already scanned. Ignored.
+15 [2830496, 2150.pdf] is already scanned. Ignored.
+20 [2830494, 2149.pdf] scanned sucesfully. Result stored in 'data' table.
+19 [2830723, 2371.pdf] is already scanned. Ignored.
+22 [2835318, 896-2.pdf] scanned sucesfully. Result stored in 'data' table.
+23 [2835351, 937.pdf] scanned sucesfully. Result stored in 'data' table.
+24 [2835303, 886.pdf] scanned sucesfully. Result stored in 'data' table.
+25 [2835260, 839-1.pdf] scanned sucesfully. Result stored in 'data' table.
+26 [2835262, 839-2.pdf] scanned sucesfully. Result stored in 'data' table.
+27 [2835253, 833-1.pdf] scanned sucesfully. Result stored in 'data' table.
+28 [2835254, 833-2.pdf] scanned sucesfully. Result stored in 'data' table.
+29 [2835225, 806-2.pdf] scanned sucesfully. Result stored in 'data' table.
+11 [2830727, 2376.pdf] scanned sucesfully. Result stored in 'data' table.
+21 [2835313, 896-1.pdf] scanned sucesfully. Result stored in 'data' table.
+13 [2830724, 2373.pdf] is already scanned. Ignored.

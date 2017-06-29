@@ -13,26 +13,26 @@ cur.execute("SELECT * FROM data ORDER BY dok_id")
 rows = cur.fetchall()
 
 
-# for row in rows:
-# 	lagreSteder = []
-# 	dok_id = [row[0]]
-# 	if row[3]:
-# 		for stedsnavn in row[3]:
-# 			cur.execute("SELECT enh_snavn FROM kommune where enh_snavn = '" + str(stedsnavn) + "'")
-# 			kommune = cur.fetchall()
-# 			if(kommune):
-# 				cur.execute("SELECT stedsnavn FROM data WHERE '" + kommune[0][0] + "' = ANY(kommunenr)")
-# 				kommuneIListe = cur.fetchall()
-# 				if not kommuneIListe:
-# 					cur.execute("UPDATE data SET kommunenr = kommunenr || '{" + kommune[0][0] + "}' WHERE dok_id = %s",(dok_id))
+for row in rows:
+	lagreSteder = []
+	dok_id = [row[0]]
+	if row[3]:
+		for stedsnavn in row[3]:
+			cur.execute("SELECT enh_snavn FROM kommune where enh_snavn = '" + str(stedsnavn) + "'")
+			kommune = cur.fetchall()
+			if(kommune):
+				cur.execute("SELECT stedsnavn FROM data WHERE '" + kommune[0][0] + "' = ANY(kommunenr)")
+				kommuneIListe = cur.fetchall()
+				if not kommuneIListe:
+					cur.execute("UPDATE data SET kommunenr = kommunenr || '{" + kommune[0][0] + "}' WHERE dok_id = %s",(dok_id))
 
-# 			else:
-# 				lagreSteder.append(stedsnavn)
+			else:
+				lagreSteder.append(stedsnavn)
 
-# 	cur.execute("UPDATE data SET stedsnavn = null WHERE dok_id = '%s'",(dok_id))
-# 	for stedar in lagreSteder:
-# 		cur.execute("UPDATE data SET stedsnavn = stedsnavn || '{" + stedar + "}' WHERE dok_id = %s",(dok_id))
-# conn.commit()
+	cur.execute("UPDATE data SET stedsnavn = null WHERE dok_id = '%s'",(dok_id))
+	for stedar in lagreSteder:
+		cur.execute("UPDATE data SET stedsnavn = stedsnavn || '{" + stedar + "}' WHERE dok_id = %s",(dok_id))
+conn.commit()
 
 cur.execute("SELECT * FROM data WHERE dok_id = 2830727")
 rows = cur.fetchall()
