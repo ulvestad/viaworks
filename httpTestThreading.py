@@ -32,13 +32,13 @@ def threading(docnum):
 
 
 
-	url1 = 'http://viaworks.dmf.int/RestService/4/api/Search?q='+searchValue+'%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=1500&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags='
+	url1 = 'http://viaworks.dmf.int/RestService/4/api/Search?q='+searchValue+'%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=1&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags='
 	r = requests.get(url1, headers={'Cookie': cookie}) # send auth unconditionally
 
 	r.raise_for_status() # raise an exception if the authentication fails
 	content = r.json()
 
-	#print(r.text)
+	print(r.text)
 	
 
 

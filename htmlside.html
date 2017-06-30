@@ -1,0 +1,82 @@
+<script type="text/javascript">
+	function myFunc() {
+		//console.log("Du har trykket på submit")
+		var xhr = new XMLHttpRequest();
+		var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
+		var url_search = "http://viaworks.dmf.int/RestService/4/api/Search?q=*%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=1&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags="
+		var payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"kimknuds"},{"Name":"windowspassword","Value":"Jalla9012"},{"Name":"windowsdomain","Value":"dmf"}]}
+		xhr.open('POST', url_login, true);
+		xhr.setRequestHeader('Content-type', 'application/json');
+		xhr.onreadystatechange = function () {
+		    // do something to response
+		    if(this.status == 200) {
+		    	//console.log("Printer inni xhr.onload function")
+		    	
+		    	if(this.responseText){
+		    		console.log(this.responseText);
+		    		var json = JSON.parse(this.responseText)
+		    		
+		    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
+			    	console.log(auth_cookie)
+			    	document.getElementById("user").innerHTML = json["Data"]["UserDisplayName"]
+					document.cookie = auth_cookie;
+		    	}
+
+		    	xhr.open('GET', url_search, true);
+		  //   	xhr.withCredentials = true;
+				// xhr.setRequestHeader('Cookie', auth_cookie);
+				xhr.onreadystatechange = function () {
+				    // do something to response
+				    if(this.status == 200) {
+				    	//console.log("Printer inni xhr.onload function")
+				    	
+				    	if(this.responseText){
+				    		var json = JSON.parse(this.responseText)
+
+					    	document.getElementById("user").innerHTML = json["Data"]["Hits"][0]["DocumentID"]
+				    	}	
+				    }
+				};
+				xhr.send(JSON.stringify(payload));
+
+
+
+
+
+		    }
+		};
+		xhr.send(JSON.stringify(payload));
+
+		// session = requests.Session()
+		// headers = {'Content-type': 'application/json'}
+		// payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"kimknuds"},{"Name":"windowspassword","Value":"Jalla9012"},{"Name":"windowsdomain","Value":"dmf"}]}
+
+		// r = session.post('http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session', data=json.dumps(payload), headers=headers)
+
+		// #print(r.cookies['.ASPXAUTH'])
+		// #print(r.cookies.keys())
+
+
+
+		// cookie = ".ASPXAUTH="+r.cookies['.ASPXAUTH']+";"
+		// searchValue = "*"
+		// docNum =  docnum
+
+
+
+		// url1 = 'http://viaworks.dmf.int/RestService/4/api/Search?q='+searchValue+'%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=1&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags='
+		// r = requests.get(url1, headers={'Cookie': cookie}) # send auth unconditionally
+
+		// r.raise_for_status() # raise an exception if the authentication fails
+		// content = r.json()
+
+		// print(r.text)
+	}
+</script>
+<input type="text">
+<input type="submit" onClick="myFunc()">
+<div id="user">
+</div>
+
+<div id="doc">
+</div>
