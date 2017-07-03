@@ -1,3 +1,4 @@
+<script src="node_modules\js-cookie\src\js.cookie.js"></script>
 <script type="text/javascript">
 	function myFunc() {
 		//console.log("Du har trykket på submit")
@@ -5,43 +6,47 @@
 		var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
 		var url_search = "http://viaworks.dmf.int/RestService/4/api/Search?q=*%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=1&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags="
 		var payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"kimknuds"},{"Name":"windowspassword","Value":"Jalla9012"},{"Name":"windowsdomain","Value":"dmf"}]}
+		
+
 		xhr.open('POST', url_login, true);
 		xhr.setRequestHeader('Content-type', 'application/json');
+		xhr.withCredentials = true;
 		xhr.onreadystatechange = function () {
 		    // do something to response
 		    if(this.status == 200) {
 		    	//console.log("Printer inni xhr.onload function")
 		    	
 		    	if(this.responseText){
-		    		console.log(this.responseText);
+		    		//console.log(this.responseText);
 		    		var json = JSON.parse(this.responseText)
 		    		
 		    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
-			    	console.log(auth_cookie)
+			    	//console.log(auth_cookie)
 			    	document.getElementById("user").innerHTML = json["Data"]["UserDisplayName"]
 					document.cookie = auth_cookie;
+					Cookies.set('.ASPXAUTH', json["Data"]["AuthCookie"], { path: '/' });
+		    	
+
+			      	xhr.open('GET', url_search, true);
+			     	xhr.withCredentials = true;
+					
+					xhr.onreadystatechange = function () {
+					    // do something to response
+					    if(this.status == 200) {
+					    	//console.log("Printer inni xhr.onload function")
+					    	
+					    	if(this.responseText){
+					    		var json = JSON.parse(this.responseText)
+
+				    			var documentId = json["Data"]["Hits"][0]["DocumentId"]
+								var documentName = json["Data"]["Hits"][0]["Name"]
+						    	document.getElementById("doc").innerHTML = documentId + documentName
+					    	}	
+					    }
+					};
+					xhr.send();
+
 		    	}
-
-		    	xhr.open('GET', url_search, true);
-		  //   	xhr.withCredentials = true;
-				// xhr.setRequestHeader('Cookie', auth_cookie);
-				xhr.onreadystatechange = function () {
-				    // do something to response
-				    if(this.status == 200) {
-				    	//console.log("Printer inni xhr.onload function")
-				    	
-				    	if(this.responseText){
-				    		var json = JSON.parse(this.responseText)
-
-					    	document.getElementById("user").innerHTML = json["Data"]["Hits"][0]["DocumentID"]
-				    	}	
-				    }
-				};
-				xhr.send(JSON.stringify(payload));
-
-
-
-
 
 		    }
 		};

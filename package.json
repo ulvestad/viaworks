@@ -26,6 +26,7 @@
     "datatables.net": "^1.10.15",
     "datatables.net-dt": "^1.10.15",
     "fs": "0.0.1-security",
+    "js-cookie": "^2.1.4",
     "node-gyp": "^3.6.2",
     "pg": "^6.4.0",
     "postgres-js": "^0.1.0",
