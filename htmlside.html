@@ -1,24 +1,73 @@
-<script src="node_modules\js-cookie\src\js.cookie.js"></script>
-<script src="js/table.js"></script>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!DOCTYPE html>
+<html>
+	<head>
+	    <!-- Custom Stylesheets-->
+	    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-<div id="header">
-	<img src="grafikk/dmflogo.no.svg" width="50px" >
-	<b>DIRMIN - Søk i arkiv</b>
-</div>
+	    <meta charset="utf-8">
+	    <title>DIRMIN - Arkivsøk</title>
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			    $('#MYtable').DataTable( {
+			        initComplete: function () {
+			            this.api().columns().every( function () {
+			                var column = this;
+			                var select = $('<select><option value=""></option></select>')
+			                    .appendTo( $(column.footer()).empty() )
+			                    .on( 'change', function () {
+			                        var val = $.fn.dataTable.util.escapeRegex(
+			                            $(this).val()
+			                        );
+			                //to select and search from grid
+			                        column
+			                            .search( val ? '^'+val+'$' : '', true, false )
+			                            .draw();
+			                    } );
+			 
+			                column.data().unique().sort().each( function ( d, j ) {
+			                    select.append( '<option value="'+d+'">'+d+'</option>' )
+			                } );
+			            } );
+			        }
+			    } );
+			} );
+		</script>
+	</head>
+	<body>
 
-<input type="text" placeholder="Verdi">
-<input type="submit" onClick="myFunc()" value="Søk">
+		<div id="header">
+			<img src="grafikk/dmflogo.no.svg" width="50px" >
+			<b>DIRMIN - Søk i arkiv</b>
+		</div>
 
-<!-- <input type="image" onClick="myFunc()"  src= "https://dirmin.no/sites/all/themes/dmf/css/images/sok.svg" width="20px" border="1"  style="border-color: #969696; margin-left: -5px; margin-top: 5px">  -->
+		<input type="text" placeholder="Verdi">
+		<input type="submit" onClick="myFunc()" value="Søk">
 
-<div id="user"></div>
+		<!-- <input type="image" onClick="myFunc()"  src= "https://dirmin.no/sites/all/themes/dmf/css/images/sok.svg" width="20px" border="1"  style="border-color: #969696; margin-left: -5px; margin-top: 5px">  -->
 
-<table border="1 px" id="MYtable">
-	<tr>
-		<th>Treff nr.</th>
-		<th>DokumentID</th>
-		<th>Dokumentnavn</th>
-		<th>Nedlastningslink</th>
-	</tr>
-</table>
+		<div id="user"></div>
+
+		<table border="1 px" id="MYtable" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th>Treff nr.</th>
+					<th>DokumentID</th>
+					<th>Dokumentnavn</th>
+					<th>Nedlastningslink</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+
+		<!-- All custom javascript file imports -->
+		<script src="node_modules\js-cookie\src\js.cookie.js"></script>
+		<script src="js/table.js"></script>
+		<br />
+		<div id="loader" class="loaderOff"></div>
+
+	</body>
+</html>
