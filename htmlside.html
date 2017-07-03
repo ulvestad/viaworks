@@ -1,4 +1,5 @@
 <script type="text/javascript">
+
 	function myFunc() {
 		//console.log("Du har trykket på submit")
 		var xhr = new XMLHttpRequest();
@@ -14,11 +15,11 @@
 		    	
 		    	if(this.responseText){
 		    		console.log(this.responseText);
-		    		var json = JSON.parse(this.responseText)
-		    		
-		    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
-			    	console.log(auth_cookie)
-			    	document.getElementById("user").innerHTML = json["Data"]["UserDisplayName"]
+		    		var json = JSON.parse(this.responseText);
+		    		console.log(json);
+		    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";";
+			    	console.log(auth_cookie);
+			    	document.getElementById("user").innerHTML = json["Data"]["UserDisplayName"];
 					document.cookie = auth_cookie;
 		    	}
 
@@ -31,9 +32,9 @@
 				    	//console.log("Printer inni xhr.onload function")
 				    	
 				    	if(this.responseText){
-				    		var json = JSON.parse(this.responseText)
+				    		var json = JSON.parse(this.responseText);
 
-					    	document.getElementById("user").innerHTML = json["Data"]["Hits"][0]["DocumentID"]
+					    	document.getElementById("user").innerHTML = json["Data"]["Hits"][0]["DocumentID"];
 				    	}	
 				    }
 				};
