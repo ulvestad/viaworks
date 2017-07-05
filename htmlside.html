@@ -2,15 +2,35 @@
 <html>
 	<head>
 	    <!-- Custom Stylesheets-->
-	    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+	    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
 	    <meta charset="utf-8">
 	    <title>DIRMIN - Arkivsøk</title>
 	    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
 		<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 		<script>
 			$(document).ready(function() {
-			    $('#MYtable').DataTable( {
+			    
+
+			    $("#btn").click(function(){
+			    	if($("#btn").val() == "BYTTET") {
+			    		$("#btn").attr("value","HEIHEI")
+			    	} else {
+						$("#btn").attr("value","BYTTET")
+			    	}
+				})
+
+				$("#bytt").click(function(){
+					$("#MYtablee").attr("id","MYtable")
+					jQuery.ready()
+					test()
+				})
+				//test();
+
+			} );
+
+			function test() {
+				console.log("test() er kjørt")
+				$('#MYtable').DataTable( {
 			        initComplete: function () {
 			            this.api().columns().every( function () {
 			                var column = this;
@@ -32,7 +52,8 @@
 			            } );
 			        }
 			    } );
-			} );
+			}
+
 		</script>
 	</head>
 	<body>
@@ -49,7 +70,7 @@
 
 		<div id="user"></div>
 
-		<table border="1 px" id="MYtable" class="display" cellspacing="0" width="100%">
+		<table border="1 px" id="MYtablee" class="display" cellspacing="0" width="100%">
 			<thead>
 				<tr>
 					<th>Treff nr.</th>
@@ -58,8 +79,8 @@
 					<th>Nedlastningslink</th>
 				</tr>
 			</thead>
-			<tbody>
-				
+			<tbody id="tbody">
+			
 			</tbody>
 		</table>
 
@@ -67,7 +88,9 @@
 		<script src="node_modules\js-cookie\src\js.cookie.js"></script>
 		<script src="js/table.js"></script>
 		<br />
-		<div id="loader" class="loaderOff"></div>
+		<div id="loader" class="loaderOff" onclick="test()"></div>
+		<input type="submit" value="BYTT" id="bytt" />
+		<input type="submit" value="HEIHEI" id="btn" />
 
 	</body>
 </html>

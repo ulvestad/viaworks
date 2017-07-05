@@ -3,7 +3,7 @@ function myFunc() {
 	document.getElementById("loader").setAttribute("class", "loader");
 	var xhr = new XMLHttpRequest();
 	var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
-	var url_search = "http://viaworks.dmf.int/RestService/4/api/Search?q=*%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=10&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags="
+	var url_search = "http://viaworks.dmf.int/RestService/4/api/Search?q=*%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=20&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags="
 	var payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"kimknuds"},{"Name":"windowspassword","Value":"Jalla9012"},{"Name":"windowsdomain","Value":"dmf"}]}
 
 
@@ -14,7 +14,6 @@ function myFunc() {
 	    // do something to response
 	    if(this.status == 200) {
 	    	//console.log("Printer inni xhr.onload function")
-	    	
 	    	if(this.responseText){
 	    		var json = JSON.parse(this.responseText)
 	    		
@@ -29,6 +28,7 @@ function myFunc() {
 				xhr.onreadystatechange = function () {
 					document.getElementById("loader").setAttribute("class", "loaderOff");
 				    if(this.status == 200) {
+				    	// document.getElementById("MYtable").setAttribute("id", "MYtablee");
 				    	if(this.responseText){
 				    		var json = JSON.parse(this.responseText)
 
@@ -48,9 +48,13 @@ function myFunc() {
 								cell3.innerHTML = datahits[i]["Name"];
 								cell4.innerHTML = "<a href='" + strLink + "' download>Last ned dokumentet</a>";
 							}
-
-				    	}	
+							document.getElementById("MYtablee").setAttribute("id", "MYtable");
+				    		test()
+				    	}
+				    	
 				    }
+				    // console.log("Kjører nå MYtablee = MYtable")
+
 				};
 				xhr.send();
 
@@ -59,4 +63,5 @@ function myFunc() {
 	    }
 	};
 	xhr.send(JSON.stringify(payload));
+
 }
