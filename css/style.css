@@ -8,7 +8,6 @@
   animation: spin 1.5s linear infinite;
   opacity: 1;
   margin: auto;
-  margin-top: 25vh;
 }
 
 @-webkit-keyframes spin {
@@ -36,7 +35,7 @@
 #load-text{
   margin-left: calc(50% - 30px);
 }
-td{
+td {
     word-break:break-all;
 }
 html *
@@ -47,10 +46,10 @@ html *
 
 }
 
-tr{
+/*tr {
     border-bottom:3px  black !important;
 }
-
+*/
 #cellHR{
   opacity: 0.3;
 }
@@ -60,13 +59,58 @@ tr{
   font-weight: bold !important;
 }
 
-td{
-  padding-top: 25px;
-  padding-bottom: 25px;
+#brunFirkant {
+    width:10px;
+}
+
+td {
+  padding-top: 0px !important;
+  padding-bottom: 40px !important;
   border-left: 25px;
   width: 100%;
 }
 
 #resTable{
   width: 100%;
+}
+
+#tall {
+  opacity:0.0;
+}
+
+#th1 {
+  max-width: 5px;
+}
+tr.odd, table.dataTable.display tbody tr.odd {
+  background-color: #f9f9f9 !important;
+}
+
+#textSearch {
+  width:300px;
+}
+
+#brunStrek {
+  border: solid 2px #BAA87A !important;
+}
+
+#wraps {
+  display: flex;
+
+}
+
+#venstre {
+}
+#hoyre {
+  padding-left: 10%;
+  padding-top: 10px;
+  font-style: italic;
+  width: 300px;
+  height: 40px;
+  font-size: 11px !important;
+}
+
+.viaworks-highlighting{
+  font-weight: bold !important;
+  background-color: #9AD8DA;
+  font-size: 11px !important;
 }

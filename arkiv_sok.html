@@ -5,32 +5,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
     <meta charset="utf-8">
-    <link rel="Stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+    <link rel="Stylesheet" href="css/jquery.dataTables.min.css" />
     <title>DIRMIN - Arkivsøk</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
 	<script>
 		$(document).ready(function() {
-		    
-
-		    $("#btn").click(function(){
-		    	if($("#btn").val() == "BYTTET") {
-		    		$("#btn").attr("value","HEIHEI")
-		    	} else {
-					$("#btn").attr("value","BYTTET")
-		    	}
-			})
-
-			$("#bytt").click(function(){
-				$("#MYtablee").attr("id","MYtable")
-				jQuery.ready()
-			})
-
+		    $('#textSearch').on('keyup', function(e) {
+			    if (e.keyCode === 13) {
+			        $('#submit').click();
+			    }
+			});
 		} );
 
 		function test() {
-			console.log("test() er kjørt")
-			$('#resTable').DataTable( {
+			console.log("test() er kjørt");
+			var table = $('#resTable').DataTable( {
 		        initComplete: function () {
 		            this.api().columns().every( function () {
 		                var column = this;
@@ -54,6 +44,11 @@
 		    } );
 		}
 
+		function slettTable() {
+			var table = $("#resTable").DataTable({});
+			table.clear();
+			table.destroy();
+		}
 	</script>
 </head>
 <body>
@@ -62,25 +57,23 @@
     		<img src="grafikk/dirmin.svg" width="250px" >
 		</div>
 		<div style="float: right !important; margin-top: 35px;" >
-			<input type="text" placeholder="Rapport" id="textSearch" style="width:300px;">
-			<input type="submit" onClick="fillTable()" value="Søk">
+			<input type="text" placeholder="Rapport" id="textSearch">
+			<input type="submit" onClick="slettTable();fillTable()" id="submit" value="Søk">
 		</div>
 	</div>
 	<br>
-	<hr style="border: solid 2px #BAA87A !important;">
+	<hr id="brunStrek">
 	<br>
 
 	<div id="user"></div>
 
-	<table id="resTable">
+	<table id="resTable" class="testIkkeBrukt" value="testIkkeBrukt">
 		<thead>
 			<tr>
-				<th></th>
-				<th></th>
+				<th id=\"th1\"></th>
 			</tr>
 		</thead>
 		<tbody id="tbody">
-		
 		</tbody>
 	</table>
 
