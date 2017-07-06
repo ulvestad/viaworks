@@ -24,7 +24,7 @@ function myFunc() {
 				var text = document.getElementById("textSearch").value;
 				if(text == "") { text = "*" }
 				console.log("Tekst: " + text)
-				var url_search = `http://viaworks.dmf.int/RestService/4/api/Search?q=${text}%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=20&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags=`
+				var url_search = `http://viaworks.dmf.int/RestService/4/api/Search?q=${text}%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=200&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags=`
 
 		      	xhr.open('GET', url_search, true);
 		     	xhr.withCredentials = true;
