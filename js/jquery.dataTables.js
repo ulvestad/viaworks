@@ -1090,7 +1090,7 @@
     }
 
     function ob(a) {
-        for (var b = a.oClasses, c = a.sTableId, d = a.aLengthMenu, e = h.isArray(d[0]), f = e ? d[0] : d, d = e ? d[1] : d, e = h("<select/>", {
+        for (var b = a.oClasses, c = a.sTableId, d = a.aLengthMenu, e = h.isArray(d[0]), f = e ? d[0] : d, d = e ? d[0] : d, e = h("<select/>", {
                 name: c + "_length",
                 "aria-controls": c,
                 "class": b.sLengthSelect
@@ -3199,7 +3199,7 @@
         ],
         aaSortingFixed: [],
         ajax: null,
-        aLengthMenu: [10, 25, 50, 100],
+        aLengthMenu: [5, 10, 25, 50, 100],
         aoColumns: null,
         aoColumnDefs: null,
         aoSearchCols: [],
@@ -3250,7 +3250,7 @@
         fnStateSaveParams: null,
         iStateDuration: 7200,
         iDeferLoading: null,
-        iDisplayLength: 10,
+        iDisplayLength: 5,
         iDisplayStart: 0,
         iTabIndex: 0,
         oClasses: {},
