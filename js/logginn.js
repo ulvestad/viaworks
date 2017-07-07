@@ -13,12 +13,15 @@ function checkCredentials(){
 	    // do something to response
 	    if(this.status == 200) {
 	    	if(this.responseText){
-	    		var json = JSON.parse(this.responseText)
-	    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
-		    	document.getElementById("user").innerHTML = "Bruker: " + json["Data"]["UserDisplayName"]
-		    	//saveCookie(auth_cookie)
-				location.href="file:///C:/Users/kimknuds/Source/Repos/ViaWorks/viaworks/arkiv_sok.html";
-				
+	    		xhr.onload = function(){
+		    		var json = JSON.parse(this.responseText)
+		    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
+			    	document.getElementById("user").innerHTML = "Bruker: " + json["Data"]["UserDisplayName"]
+			    	//saveCookie(auth_cookie)
+			    	var loc = window.location.pathname;
+					var dir = loc.substring(0, loc.lastIndexOf('/'));
+					location.href=dir+"/arkiv_sok.html";
+				}
 				//user authentication successfull
 
 				// document.getElementById("loader").style.visibility= "hidden";
