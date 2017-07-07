@@ -159,8 +159,6 @@ tr.odd, table.dataTable.display tbody tr.odd {
   font-size: 14px;
 }
 .form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
   outline: 0;
   background: #00AEC5;
   width: 100%;
@@ -221,7 +219,7 @@ tr.odd, table.dataTable.display tbody tr.odd {
   color: #EF3B3A;
 }
 body {
-  background: #E3E3E3; /* fallback for old browsers */
+  background: #ededed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
 }
