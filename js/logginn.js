@@ -20,7 +20,8 @@ function checkCredentials(){
 			    	//saveCookie(auth_cookie)
 			    	var loc = window.location.pathname;
 					var dir = loc.substring(0, loc.lastIndexOf('/'));
-					location.href=dir+"/arkiv_sok.html";
+					console.log(dir+"/arkiv_sok.html")
+					location.href="file:///" + dir+"/arkiv_sok.html";
 				}
 				//user authentication successfull
 
