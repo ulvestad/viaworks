@@ -218,7 +218,7 @@ tr.odd, table.dataTable.display tbody tr.odd {
 .container .info span .fa {
   color: #EF3B3A;
 }
-body {
+.loginBody{
   background: #ededed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
