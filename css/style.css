@@ -105,7 +105,10 @@ tr.odd, table.dataTable.display tbody tr.odd {
   padding-right: 5px;
   background-color: #EEEEEE;
 }
-
+#innlogging_feilet {
+  font-size: 14 !important;
+  color: red;
+}
 
 /*--------------- login page -----------------------*/
 

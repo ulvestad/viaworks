@@ -34,6 +34,8 @@ function checkCredentials(){
 				// document.getElementById("load-text").style.visibility= "hidden";
 
 	    	}
+	    } else if (this.status == 401) {
+	    	document.getElementById("innlogging_feilet").innerHTML = "Feil brukernavn eller passord";
 	    }
 	};
 	xhr.send(JSON.stringify(payload));
