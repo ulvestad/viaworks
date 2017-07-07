@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Custom Stylesheets-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
@@ -9,6 +10,9 @@
     <title>Arkivsøk - DIRMIN</title>
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
 	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
+	<script type="text/javascript" src="js/table.js"></script>
+	<script type="text/javascript" src="js/logginn.js"></script>
 	<script>
 		$(document).ready(function() {
 		    $('#textSearch').on('keyup', function(e) {
@@ -53,7 +57,7 @@
 <body>
 	<div id="header" style="display: flex; justify-content: space-between;">
 		<div>	
-    		<img src="grafikk/dirmin.svg" width="250px" >
+    		<img src="grafikk/dirmin.svg" style="width:250px; height: 55px;" >
 		</div>
 		<div style="float: right !important; margin-top: 35px;" >
 			<input type="text" placeholder="Søk" id="textSearch" value="Trondheim">
@@ -69,20 +73,18 @@
 	<table id="resTable">
 		<thead>
 			<tr>
-				<th id=\"th1\"></th>
+				<th id="th1"></th>
 			</tr>
 		</thead>
 		<tbody id="tbody">
 		</tbody>
 	</table>
 
-	<div id="loader-container"></div>
+	<!-- <div id="loader-container"></div>
 	<div id="loader"></div>
-	<p id="load-text">Laster</p>
+	<p id="load-text">Laster</p> -->
 
 	<!-- All custom javascript file imports -->
-	<script src="node_modules\js-cookie\src\js.cookie.js"></script>
-	<script src="js/table.js"></script>
 
 
 </body>

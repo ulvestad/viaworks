@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Custom Stylesheets-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
@@ -9,6 +10,9 @@
     <title>Arkivsøk - DIRMIN</title>
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/logginn.js"></script>
 
 </head>
 <body class="loginBody">
@@ -21,19 +25,27 @@
   
   <div class="form">
     
-    <form class="login-form">
+    <table class="login-form">
       
-      <input type="text" placeholder="Brukernavn"/>
-      <input type="password" placeholder="Passord"/>
-      <button>Logg inn</button>
+      <input type="text" placeholder="Brukernavn" value="kimknuds" id="user" />
+      <input type="password" placeholder="Passord" value="Jalla9012" id="pass" />
+      <button onClick="checkCredentials()">Logg inn</button>
       
       <p class="message">Har du ikke bruker? Kontakt Steinar.</p>
     
-    </form>
+    </table>
  
   </div>
 
 </div>
+
+
+<!-- <div id="loader-container-login"></div>
+<div id="loader-login"></div>
+<p id="load-text-login"></p>
+ -->
+
+
 
 </body>
 
