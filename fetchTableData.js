@@ -2,7 +2,7 @@ const {Client } = require('pg')
 var fs = require('graceful-fs')
 
 
-fs.writeFileSync('C:/Users/simulves/Desktop/exportCSV.csv','dok_id;dok_navn;sted_i_kommmune;mineraler\n','utf8', 'w');
+fs.writeFileSync('C:/Users/kimknuds/Desktop/exportCSV.csv','dok_navn;sted_i_kommmune;mineraler\n','utf8', 'w');
 const client = new Client({
   user: 'postgres',
   host: '10.103.166.213',
@@ -28,9 +28,6 @@ client.query(query, (err, res) => {
 
   		content = ""
   		var row = res.rows
-  		var dok_id = res.rows[x].dok_id
-  		content += dok_id+";"
-  		table += "<td>"+dok_id+"</td>\n"
 
 	    var dok_navn = res.rows[x].dok_navn
 	    content += dok_navn+";"
@@ -63,9 +60,9 @@ client.query(query, (err, res) => {
 
 	  	table += "</tr>\n"
 	  	content = content+"\n"
-	  	fs.appendFile('C:/Users/simulves/Desktop/table.txt', table ,encoding='utf8')
+	  	fs.appendFile('C:/Users/kimknuds/Desktop/table.txt', table ,encoding='utf8')
 	  	
-	  	fs.appendFile('C:/Users/simulves/Desktop/exportCSV.csv', content, encoding='utf8');
+	  	fs.appendFile('C:/Users/kimknuds/Desktop/exportCSV.csv', content, encoding='utf8');
   	}
 
   }
