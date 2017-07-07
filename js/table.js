@@ -1,37 +1,37 @@
-window.onload = function(){
+// window.onload = function(){
 
-	var xhr = new XMLHttpRequest();
-	var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
-	var payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"kimknuds"},{"Name":"windowspassword","Value":"Jalla9012"},{"Name":"windowsdomain","Value":"dmf"}]}
+// 	var xhr = new XMLHttpRequest();
+// 	var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
+// 	var payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"kimknuds"},{"Name":"windowspassword","Value":"Jalla9012"},{"Name":"windowsdomain","Value":"dmf"}]}
 
-	xhr.open('POST', url_login, true);
-	xhr.setRequestHeader('Content-type', 'application/json');
-	xhr.withCredentials = true;
-	xhr.onreadystatechange = function () {
-	    // do something to response
-	    if(this.status == 200) {
-	    	//console.log("Printer inni xhr.onload function")
+// 	xhr.open('POST', url_login, true);
+// 	xhr.setRequestHeader('Content-type', 'application/json');
+// 	xhr.withCredentials = true;
+// 	xhr.onreadystatechange = function () {
+// 	    // do something to response
+// 	    if(this.status == 200) {
+// 	    	//console.log("Printer inni xhr.onload function")
 	    	
-	    	if(this.responseText){
-	    		var json = JSON.parse(this.responseText)
+// 	    	if(this.responseText){
+// 	    		var json = JSON.parse(this.responseText)
 	    		
-	    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
-		    	document.getElementById("user").innerHTML = "Bruker: " + json["Data"]["UserDisplayName"]
-				document.cookie = auth_cookie;
-				Cookies.set('.ASPXAUTH', json["Data"]["AuthCookie"], { path: '/' });
+// 	    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
+// 		    	document.getElementById("user").innerHTML = "Bruker: " + json["Data"]["UserDisplayName"]
+// 				document.cookie = auth_cookie;
+// 				Cookies.set('.ASPXAUTH', json["Data"]["AuthCookie"], { path: '/' });
 				
-				//user authentication successfull
+// 				//user authentication successfull
 
-				document.getElementById("loader").style.visibility= "hidden";
-				document.getElementById("loader-container").style.visibility= "hidden";
-				document.getElementById("load-text").style.visibility= "hidden";
+// 				document.getElementById("loader").style.visibility= "hidden";
+// 				document.getElementById("loader-container").style.visibility= "hidden";
+// 				document.getElementById("load-text").style.visibility= "hidden";
 
-	    	}
-	    }
-	};
-	xhr.send(JSON.stringify(payload));
+// 	    	}
+// 	    }
+// 	};
+// 	xhr.send(JSON.stringify(payload));
 
-};
+// };
 
 function formatBytes(a,b){if(0==a)return"0 Bytes";var c=1e3,d=b||2,e=["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"],f=Math.floor(Math.log(a)/Math.log(c));return parseFloat((a/Math.pow(c,f)).toFixed(d))+" "+e[f]}
 

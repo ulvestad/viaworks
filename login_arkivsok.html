@@ -23,9 +23,9 @@
     
     <form class="login-form">
       
-      <input type="text" placeholder="Brukernavn" value="kimknuds" />
-      <input type="password" placeholder="Passord" value="Jalla9012" />
-      <button>Logg inn</button>
+      <input type="text" placeholder="Brukernavn" value="kimknuds" id="user" />
+      <input type="password" placeholder="Passord" value="Jalla9012" id="pass" />
+      <button onClick="checkCredentials()">Logg inn</button>
       
       <p class="message">Har du ikke bruker? Kontakt sysadmin.</p>
     
@@ -34,6 +34,16 @@
   </div>
 
 </div>
+
+
+<!-- <div id="loader-container-login"></div>
+<div id="loader-login"></div>
+<p id="load-text-login"></p>
+ -->
+
+<script src="node_modules\js-cookie\src\js.cookie.js"></script>
+<script src="js/table.js"></script>
+<script src="js/logginn.js"></script>
 
 </body>
 
