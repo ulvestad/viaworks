@@ -19,7 +19,6 @@
 		} );
 
 		function test() {
-			console.log("test() er kjørt");
 			var table = $('#resTable').DataTable( {
 		        initComplete: function () {
 		            this.api().columns().every( function () {
@@ -35,7 +34,7 @@
 		                            .search( val ? '^'+val+'$' : '', true, false )
 		                            .draw();
 		                    } );
-		 
+
 		                column.data().unique().sort().each( function ( d, j ) {
 		                    select.append( '<option value="'+d+'">'+d+'</option>' )
 		                } );
@@ -57,7 +56,7 @@
     		<img src="grafikk/dirmin.svg" width="250px" >
 		</div>
 		<div style="float: right !important; margin-top: 35px;" >
-			<input type="text" placeholder="Søk" id="textSearch">
+			<input type="text" placeholder="Søk" id="textSearch" value="Trondheim">
 			<input type="image" src="grafikk/search-icon.png" onClick="slettTable();fillTable()" id="submit" alt="Søk">
 		</div>
 	</div>
@@ -67,7 +66,7 @@
 
 	<div id="user"></div>
 
-	<table id="resTable" class="testIkkeBrukt" value="testIkkeBrukt">
+	<table id="resTable">
 		<thead>
 			<tr>
 				<th id=\"th1\"></th>
