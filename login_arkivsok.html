@@ -13,6 +13,20 @@
     <script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
     <script type="text/javascript" src="js/table.js"></script>
     <script type="text/javascript" src="js/logginn.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#pass').on('keyup', function(e) {
+          if (e.keyCode === 13) {
+              $('#logginn').click();
+          }
+        });
+        $('#user').on('keyup', function(e) {
+          if (e.keyCode === 13) {
+              $('#logginn').click();
+          }
+        });
+      } );
+    </script>
 
 </head>
 <body class="loginBody">
@@ -30,7 +44,7 @@
       <input type="text" placeholder="Brukernavn" value="kimknuds" id="user" />
       <input type="password" placeholder="Passord" value="Jalla9012" id="pass" />
       <div id="innlogging_feilet"></div>
-      <button onClick="checkCredentials()">Logg inn</button>
+      <button onClick="checkCredentials()" id="logginn">Logg inn</button>
       
       <p class="message">Har du ikke bruker? Kontakt Steinar.</p>
     

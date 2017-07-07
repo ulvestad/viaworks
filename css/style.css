@@ -217,7 +217,7 @@ tr.odd, table.dataTable.display tbody tr.odd {
   -webkit-animation: spin 0.85s linear infinite;
   animation: spin  0.85s linear infinite;
   margin: auto;
-  margin-top: -45%;
+  margin-top: -300px;
   opacity: 1;
   position: relative; 
   z-index: 3000;
