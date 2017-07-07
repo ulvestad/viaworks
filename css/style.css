@@ -95,14 +95,13 @@ tr.odd, table.dataTable.display tbody tr.odd {
 
 #wraps {
   display: flex;
-
 }
 
 #venstre {
 }
 #hoyre {
   padding-left: 10%;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   font-style: italic;
   width: 300px;
   height: 40px;
