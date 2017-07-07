@@ -37,9 +37,10 @@ function saveCookie(authcookie) {
 function formatBytes(a,b){if(0==a)return"0 Bytes";var c=1e3,d=b||2,e=["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"],f=Math.floor(Math.log(a)/Math.log(c));return parseFloat((a/Math.pow(c,f)).toFixed(d))+" "+e[f]}
 
 function fillTable() {
-	// document.getElementById("loader").style.visibility= "visible";
-	// document.getElementById("load-text").style.visibility= "visible";
-	// document.getElementById("load-text").innerHTML= "Søker...";
+	console.log("hei")
+	document.getElementById("loader").style.visibility= "visible";
+	document.getElementById("load-text").style.visibility= "visible";
+	document.getElementById("load-text").innerHTML= "Søker";
 
 	var xhr = new XMLHttpRequest();
 	var text = document.getElementById("textSearch").value;
@@ -92,8 +93,8 @@ function fillTable() {
 					}
 	    		test()
 				}
-	    		// document.getElementById("loader").style.visibility= "hidden";
-	    		// document.getElementById("load-text").style.visibility= "hidden";
+	    		document.getElementById("loader").style.visibility= "hidden";
+	    		document.getElementById("load-text").style.visibility= "hidden";
 	    	}
 	    }
 	};

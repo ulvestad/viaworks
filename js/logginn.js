@@ -35,9 +35,14 @@ function checkCredentials(){
 
 	    	}
 	    } else if (this.status == 401) {
+	    	console.log(this.status)
 	    	document.getElementById("loader-container-login").style.visibility = "hidden";
 			document.getElementById("loader-login").style.visibility = "hidden";
 	    	document.getElementById("innlogging_feilet").innerHTML = "Feil brukernavn eller passord";
+	    } else if (this.status == 503) {
+	    	document.getElementById("loader-container-login").style.visibility = "hidden";
+			document.getElementById("loader-login").style.visibility = "hidden";
+	    	document.getElementById("innlogging_feilet").innerHTML = "Tjenesten er utilgjengelig. Prøv igjen senere";
 	    }
 	};
 	xhr.send(JSON.stringify(payload));
