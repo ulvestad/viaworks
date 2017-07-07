@@ -205,17 +205,19 @@ tr.odd, table.dataTable.display tbody tr.odd {
 #logo{
   margin-bottom: 15px;
 }
-/*#loader-login {
-  border: 8px solid #f3f3f3;
+#loader-login {
+  border: 5px solid #FFF;
   border-radius: 50%;
-  border-top:8px solid #b9a879;
-  width:60px;
-  height: 60px;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
-  opacity: 1;
+  border-top:5px solid #009fb5;
+  width:40px;
+  height: 40px;
+  -webkit-animation: spin 0.85s linear infinite;
+  animation: spin  0.85s linear infinite;
   margin: auto;
-  margin-top: 10%;
+  margin-top: -45%;
+  opacity: 1;
+  position: relative; 
+  z-index: 3000;
 }
 #loader-container-login{
   width: 100%; 
@@ -223,12 +225,13 @@ tr.odd, table.dataTable.display tbody tr.odd {
   margin: 0em;
   left: 0em; 
   top: 0em;
-  background: black;
+  background-color: #e0e0e0;
   position: fixed;
-  opacity: 0.22;
+  opacity: 0.6;
+  z-index: 90;
 
 }
 
-#load-text-login{
+/*#load-text-login{
   margin-left: calc(50% - 30px);
 }*/

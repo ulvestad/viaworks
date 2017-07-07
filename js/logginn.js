@@ -1,4 +1,6 @@
 function checkCredentials(){
+	document.getElementById("loader-container-login").style.visibility = "visible";
+	document.getElementById("loader-login").style.visibility = "visible";
 	var xhr = new XMLHttpRequest();
 	var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
 	var user = document.getElementById("user").value
@@ -13,7 +15,7 @@ function checkCredentials(){
 	    // do something to response
 	    if(this.status == 200) {
 	    	if(this.responseText){
-	    		xhr.onload = function(){
+	    		xhr.onload =function(){
 		    		var json = JSON.parse(this.responseText)
 		    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
 			    	document.getElementById("user").innerHTML = "Bruker: " + json["Data"]["UserDisplayName"]
@@ -21,8 +23,10 @@ function checkCredentials(){
 			    	var loc = window.location.pathname;
 					var dir = loc.substring(0, loc.lastIndexOf('/'));
 					console.log(dir+"/arkiv_sok.html")
-					location.href="file:///" + dir+"/arkiv_sok.html";
-				}
+
+					setTimeout(function(){ location.href="file:///" + dir+"/arkiv_sok.html"; }, 1200);
+
+				};
 				//user authentication successfull
 
 				// document.getElementById("loader").style.visibility= "hidden";
