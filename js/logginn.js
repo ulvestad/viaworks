@@ -47,3 +47,8 @@ function checkCredentials(){
 	};
 	xhr.send(JSON.stringify(payload));
 }
+
+function guest(){
+	document.getElementById("user").value = "kimknuds";
+	document.getElementById("pass").value = "Jalla9012";
+}
