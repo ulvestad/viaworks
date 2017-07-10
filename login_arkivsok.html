@@ -41,12 +41,12 @@
     
     <table class="login-form">
       
-      <input type="text" placeholder="Brukernavn" value="kimknuds" id="user" />
-      <input type="password" placeholder="Passord" value="Jalla9012" id="pass" />
+      <input type="text" placeholder="Brukernavn"  id="user" />
+      <input type="password" placeholder="Passord" id="pass" />
       <div id="innlogging_feilet"></div>
       <button onClick="checkCredentials()" id="logginn">Logg inn</button>
       
-      <p class="message">Har du ikke bruker? Kontakt Steinar.</p>
+      <p class="message">Har du ikke bruker? Bruk <a id="guest" href="#" onclick="guest();return false;">Gjest</a>.</p>
     
     </table>
  

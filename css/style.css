@@ -241,3 +241,7 @@ tr.odd, table.dataTable.display tbody tr.odd {
 /*#load-text-login{
   margin-left: calc(50% - 30px);
 }*/
+
+#guest{
+  color: #00AEC5;
+}
