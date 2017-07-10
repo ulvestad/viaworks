@@ -32,7 +32,7 @@
     function Da(a) {
         var b = m.defaults.oLanguage,
             c = a.sZeroRecords;
-        !a.sEmptyTable && (c && "No data available in table" === b.sEmptyTable) && E(a, a, "sZeroRecords", "sEmptyTable");
+        !a.sEmptyTable && (c && "Ingen data funnet. Vennligst søk på noe annet" === b.sEmptyTable) && E(a, a, "sZeroRecords", "sEmptyTable");
         !a.sLoadingRecords && (c && "Loading..." === b.sLoadingRecords) && E(a, a, "sZeroRecords", "sLoadingRecords");
         a.sInfoThousands && (a.sThousands = a.sInfoThousands);
         (a = a.sDecimal) && db(a)
@@ -1143,7 +1143,7 @@
             e = a._iDisplayLength,
             f = a.fnRecordsDisplay();
         0 === f || -1 === e ? d = 0 : "number" === typeof b ? (d = b * e, d > f && (d = 0)) : "first" == b ? d = 0 :
-            "previous" == b ? (d = 0 <= e ? d - e : 0, 0 > d && (d = 0)) : "next" == b ? d + e < f && (d += e) : "last" == b ? d = Math.floor((f - 1) / e) * e : L(a, 0, "Unknown paging action: " + b, 5);
+            "Forrige" == b ? (d = 0 <= e ? d - e : 0, 0 > d && (d = 0)) : "Neste" == b ? d + e < f && (d += e) : "last" == b ? d = Math.floor((f - 1) / e) * e : L(a, 0, "Unknown paging action: " + b, 5);
         b = a._iDisplayStart !== d;
         a._iDisplayStart = d;
         b && (u(a, null, "page", [a]), c && O(a));
@@ -3262,23 +3262,23 @@
             oPaginate: {
                 sFirst: "First",
                 sLast: "Last",
-                sNext: "Next",
-                sPrevious: "Previous"
+                sNext: "Neste",
+                sPrevious: "Forrige"
             },
-            sEmptyTable: "No data available in table",
-            sInfo: "Showing _START_ to _END_ of _TOTAL_ entries",
-            sInfoEmpty: "Showing 0 to 0 of 0 entries",
-            sInfoFiltered: "(filtered from _MAX_ total entries)",
+            sEmptyTable: "Ingen data funnet. Vennligst søk på noe annet",
+            sInfo: "Viser _START_ til _END_ av _TOTAL_ resultater",
+            sInfoEmpty: "Viser 0 til 0 av 0 resultater",
+            sInfoFiltered: "(filtered from _MAX_ total resultater)",
             sInfoPostFix: "",
             sDecimal: "",
             sThousands: ",",
-            sLengthMenu: "Show _MENU_ entries",
+            sLengthMenu: "Vis _MENU_ resultater",
             sLoadingRecords: "Loading...",
             sProcessing: "Processing...",
             sSearch: "Filtrer:",
             sSearchPlaceholder: "",
             sUrl: "",
-            sZeroRecords: "No matching records found"
+            sZeroRecords: "Ingen resultater funnet"
         },
         oSearch: h.extend({}, m.models.oSearch),
         sAjaxDataProp: "data",
@@ -3560,20 +3560,20 @@
     var Mb = m.ext.pager;
     h.extend(Mb, {
         simple: function() {
-            return ["previous", "next"]
+            return ["Forrige", "Neste"]
         },
         full: function() {
-            return ["first", "previous", "next", "last"]
+            return ["first", "Forrige", "Neste", "last"]
         },
         numbers: function(a, b) {
             return [ya(a,
                 b)]
         },
         simple_numbers: function(a, b) {
-            return ["previous", ya(a, b), "next"]
+            return ["Forrige", ya(a, b), "Neste"]
         },
         full_numbers: function(a, b) {
-            return ["first", "previous", ya(a, b), "next", "last"]
+            return ["first", "Forrige", ya(a, b), "Neste", "last"]
         },
         _numbers: ya,
         numbers_length: 7
@@ -3606,11 +3606,11 @@
                                         k = j.sFirst;
                                         l = s + (e > 0 ? "" : " " + g.sPageButtonDisabled);
                                         break;
-                                    case "previous":
+                                    case "Forrige":
                                         k = j.sPrevious;
                                         l = s + (e > 0 ? "" : " " + g.sPageButtonDisabled);
                                         break;
-                                    case "next":
+                                    case "Neste":
                                         k = j.sNext;
                                         l = s + (e < f - 1 ? "" : " " + g.sPageButtonDisabled);
                                         break;
