@@ -1,10 +1,18 @@
 function checkCredentials(){
 	document.getElementById("loader-container-login").style.visibility = "visible";
 	document.getElementById("loader-login").style.visibility = "visible";
+	document.getElementById("innlogging_feilet").innerHTML = "";
 	var xhr = new XMLHttpRequest();
 	var url_login = "http://viaworks.dmf.int/RestService/4/api/Login/Forms/Session";
 	var user = document.getElementById("user").value
 	var pass = document.getElementById("pass").value
+
+	if(user == "" || pass == "") {
+		document.getElementById("innlogging_feilet").innerHTML = "Brukernavn eller passord kan ikke være tomt";
+		document.getElementById("loader-container-login").style.visibility = "hidden";
+		document.getElementById("loader-login").style.visibility = "hidden";
+		return;
+	}
 
 	var payload = {"IsPersistent":'true',"Credentials":[{"Name":"windowsusername","Value":"" + user + ""},{"Name":"windowspassword","Value":"" + pass + ""},{"Name":"windowsdomain","Value":"dmf"}]}
 
@@ -51,4 +59,7 @@ function checkCredentials(){
 function guest(){
 	document.getElementById("user").value = "kimknuds";
 	document.getElementById("pass").value = "Jalla9012";
+}
+
+function validering(){
 }
