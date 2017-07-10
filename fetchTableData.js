@@ -4,11 +4,11 @@ var fs = require('graceful-fs')
 
 fs.writeFileSync('C:/Users/kimknuds/Desktop/exportCSV.csv','dok_navn;sted_i_kommmune;mineraler\n','utf8', 'w');
 const client = new Client({
-  user: 'postgres',
-  host: '10.103.166.213',
-  database: 'stedsnavn',
-  password: 'hei',
-  port: 5432,
+	user: 'postgres',
+	host: '10.103.166.213',
+	database: 'stedsnavn',
+	password: 'hei',
+	port: 5432,
 })
 
 client.connect()
@@ -19,15 +19,15 @@ const query = {
 }
 
 client.query(query, (err, res) => {
-  if (err) {
-    console.log(err.stack)
-  } else {
+	if (err) {
+	console.log(err.stack)
+	} else {
 
-  	for( var x in res.rows ){
-  		table = "<tr>\n"
+		for( var x in res.rows ){
+			table = "<tr>\n"
 
-  		content = ""
-  		var row = res.rows
+			content = ""
+			var row = res.rows
 
 	    var dok_navn = res.rows[x].dok_navn
 	    content += dok_navn+";"
@@ -63,13 +63,11 @@ client.query(query, (err, res) => {
 	  	fs.appendFile('C:/Users/kimknuds/Desktop/table.txt', table ,encoding='utf8')
 	  	
 	  	fs.appendFile('C:/Users/kimknuds/Desktop/exportCSV.csv', content, encoding='utf8');
-  	}
+		}
 
-  }
-  client.query('SELECT COUNT(dok_id) FROM new_data',(err,res) =>{
-  	console.log("Number of documents scanned: "+res.rows[0].count)
-  })
-  client.end()
+	}
+	client.query('SELECT COUNT(dok_id) FROM new_data',(err,res) =>{
+		console.log("Number of documents scanned: "+res.rows[0].count)
+	})
+	client.end()
 })
-
-

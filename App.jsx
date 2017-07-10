@@ -40,7 +40,6 @@ class App extends React.Component {
 		}
 	}
 
-
     render() {
       return (
       	<div>
@@ -56,12 +55,10 @@ class App extends React.Component {
 	     		<th>Kommuner</th>
 	     		<th>Stedsnavn</th>
 	     		<th>Mineraler</th>
-
 	         	{this.state.informasjon.map((info) => 
 			        <TabellKolonner key={info.dok_id} dok_id={info.dok_id} dok_navn={info.dok_navn} datoer={info.datoer} 
 			        kommuner={info.kommuner} stedsnavn={info.stedsnavn} mineraler={info.mineraler}/>
 			    )}
-
          	</tabel>
         </div>
       );

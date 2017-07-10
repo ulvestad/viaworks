@@ -9,8 +9,6 @@
 		<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 		<script>
 			$(document).ready(function() {
-			    
-
 			    $("#btn").click(function(){
 			    	if($("#btn").val() == "BYTTET") {
 			    		$("#btn").attr("value","HEIHEI")
@@ -18,14 +16,11 @@
 						$("#btn").attr("value","BYTTET")
 			    	}
 				})
-
 				$("#bytt").click(function(){
 					$("#MYtablee").attr("id","MYtable")
 					jQuery.ready()
 					test()
 				})
-				//test();
-
 			} );
 
 			function test() {
@@ -45,7 +40,6 @@
 			                            .search( val ? '^'+val+'$' : '', true, false )
 			                            .draw();
 			                    } );
-			 
 			                column.data().unique().sort().each( function ( d, j ) {
 			                    select.append( '<option value="'+d+'">'+d+'</option>' )
 			                } );
@@ -80,7 +74,6 @@
 				</tr>
 			</thead>
 			<tbody id="tbody">
-			
 			</tbody>
 		</table>
 
@@ -91,6 +84,5 @@
 		<div id="loader" class="loaderOff" onclick="test()"></div>
 		<input type="submit" value="BYTT" id="bytt" />
 		<input type="submit" value="HEIHEI" id="btn" />
-
 	</body>
 </html>

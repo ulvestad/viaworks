@@ -1,11 +1,11 @@
 function lagreData(sted, kommune, dok_id) {
 	var rest_url_sql = "";
 	const client = new Client({
-	  user: 'postgres',
-	  host: '10.103.166.213',
-	  database: 'stedsnavn',
-	  password: 'hei',
-	  port: 5432,
+		user: 'postgres',
+		host: '10.103.166.213',
+		database: 'stedsnavn',
+		password: 'hei',
+		port: 5432,
 	})
 	client.connect()
 	const sqlSporring = {
@@ -46,7 +46,6 @@ function SQLquery()
 		} else {
 			for( var x in res.rows )
 			{
-		  		//rest_url = "";
 		  		table = "<tr>\n"
 
 		  		content = ""
@@ -59,41 +58,28 @@ function SQLquery()
 			    content += dok_navn+";"
 			    table += "<td>"+dok_navn+"</td>\n"
 
-
 			    var sted_i_kommune = res.rows[x].sted_i_kommmune
-			    
 
 			    if(sted_i_kommune != null)
 			    {
-			    	// console.log(sted_i_kommune.join())
 			    	stedikommune = sted_i_kommune.join();
 			    	var patt = /\)\,/
 			    	if(patt.test(stedikommune)) // 2 ELLER FLERE KOMMUNER
 			    	{
-			    		//console.log(stedikommune)
 			    		stedikommune = stedikommune.split("),");
-			    		//console.log(stedikommune.length)
 			    		for(var i=0;i<stedikommune.length;i++) 
 			    		{
-			    			//console.log(stedikommune[i])
 			    			stedikommuneto = stedikommune[i].split("(");
-			    			// kommune = stedikommune[0];
-			    			//console.log(stedikommuneto)
 			    			kommune = stedikommuneto[0];
 			    			patt2 = /\,/
-			    			//console.log(kommune)
 			    			if(patt2.test(stedikommuneto[1])) //KOMMUNE MED FLERE ENN 1 STEDSNAVN
 			    			{
 			    				stedikommuneto = stedikommuneto[1].split(",")
-			    				
-			    				//console.log(stedikommuneto.join())
 			    				for(var r=0;r<stedikommuneto.length;r++) 
 			    				{
-			    					// console.log(stedikommuneto[r])
 				    				sted = stedikommuneto[r].replace(")", "")
 				    				if(sted != "" && sted != " ")
 				    				{
-				    					//function lagreData()
 					    			} else {
 				    					//HER ER KOMMUNENE UTEN STED
 				    				}
@@ -106,12 +92,7 @@ function SQLquery()
 			    	} else {
 			    		// HER SKAL ENKELTOBJEKTER
 			    	}
-			    	// console.log(dataUt)
-		    		// content += "\""+rest_url+"\";"
-		    		// table += "<td>"+rest_url+"</td>\n"
 			    } else {
-			    	// content +=";"
-			    	// table += "<td> </td>\n"
 			    }
 
 			    // HER SKAL DET KOMME EN INSERT SQL TING

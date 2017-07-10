@@ -1,65 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Custom Stylesheets-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
-    <meta charset="utf-8">
-    <link rel="Stylesheet" href="css/jquery.dataTables.min.css" />
-    <title>Arkivsøk - DIRMIN</title>
-    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-    <script type="text/javascript" src="js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
-    <script type="text/javascript" src="js/table.js"></script>
-    <script type="text/javascript" src="js/logginn.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#pass').on('keyup', function(e) {
-          if (e.keyCode === 13) {
-              $('#logginn').click();
-          }
-        });
-        $('#user').on('keyup', function(e) {
-          if (e.keyCode === 13) {
-              $('#logginn').click();
-          }
-        });
-      } );
-    </script>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Custom Stylesheets-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
+        <meta charset="utf-8">
+        <link rel="Stylesheet" href="css/jquery.dataTables.min.css" />
+        <title>Arkivsøk - DIRMIN</title>
+        <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
+        <script type="text/javascript" src="js/table.js"></script>
+        <script type="text/javascript" src="js/logginn.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#pass').on('keyup', function(e) {
+                    if (e.keyCode === 13) {
+                        $('#logginn').click();
+                    }
+                });
+                $('#user').on('keyup', function(e) {
+                    if (e.keyCode === 13) {
+                        $('#logginn').click();
+                    }
+                });
+            } );
+        </script>
+    </head>
+    <body class="loginBody">
+        <div class="login-page">
+            <div id="logo">
+                <img src="grafikk/dirmin.svg" width="250px" >
+            </div>
 
-</head>
-<body class="loginBody">
+            <div class="form">
+                <table class="login-form">
+                    <input type="text" placeholder="Brukernavn" value="kimknuds" id="user" />
+                    <input type="password" placeholder="Passord" value="Jalla9012" id="pass" />
+                    <div id="innlogging_feilet"></div>
+                    <button onClick="checkCredentials()" id="logginn">Logg inn</button>
+                    <p class="message">Har du ikke bruker? Kontakt Steinar.</p>
+                </table>
+            </div>
+        </div>
 
-<div class="login-page">
-
-  <div id="logo">
-    <img src="grafikk/dirmin.svg" width="250px" >
-  </div>
-  
-  <div class="form">
-    
-    <table class="login-form">
-      
-      <input type="text" placeholder="Brukernavn" value="kimknuds" id="user" />
-      <input type="password" placeholder="Passord" value="Jalla9012" id="pass" />
-      <div id="innlogging_feilet"></div>
-      <button onClick="checkCredentials()" id="logginn">Logg inn</button>
-      
-      <p class="message">Har du ikke bruker? Kontakt Steinar.</p>
-    
-    </table>
- 
-  </div>
-
-</div>
-
-
-<div id="loader-container-login" style="visibility: hidden;"></div>
-<div id="loader-login" style="visibility: hidden;"></div>
-
-
-
-</body>
-
+        <div id="loader-container-login" style="visibility: hidden;"></div>
+        <div id="loader-login" style="visibility: hidden;"></div>
+    </body>
 </html>

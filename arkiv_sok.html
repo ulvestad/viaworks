@@ -1,89 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Custom Stylesheets-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
-    <meta charset="utf-8">
-    <link rel="Stylesheet" href="css/jquery.dataTables.min.css" />
-    <title>Arkivsøk - DIRMIN</title>
-    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
-	<script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
-	<script type="text/javascript" src="js/table.js"></script>
-	<script type="text/javascript" src="js/logginn.js"></script>
-	<script>
-		$(document).ready(function() {
-		    $('#textSearch').on('keyup', function(e) {
-			    if (e.keyCode === 13) {
-			        $('#submit').click();
-			    }
-			});
-		} );
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <!-- Custom Stylesheets-->
+	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="icon" type="image/png" sizes="32x32" href="grafikk/favicon.ico">
+	    <meta charset="utf-8">
+	    <link rel="Stylesheet" href="css/jquery.dataTables.min.css" />
+	    <title>Arkivsøk - DIRMIN</title>
+	    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+		<script type="text/javascript" src="node_modules\js-cookie\src\js.cookie.js"></script>
+		<script type="text/javascript" src="js/table.js"></script>
+		<script type="text/javascript" src="js/logginn.js"></script>
+		<script>
+			$(document).ready(function() {
+			    $('#textSearch').on('keyup', function(e) {
+				    if (e.keyCode === 13) {
+				        $('#submit').click();
+				    }
+				});
+			} );
 
-		function test() {
-			var table = $('#resTable').DataTable( {
-		        initComplete: function () {
-		            this.api().columns().every( function () {
-		                var column = this;
-		                var select = $('<select><option value=""></option></select>')
-		                    .appendTo( $(column.footer()).empty() )
-		                    .on( 'change', function () {
-		                        var val = $.fn.dataTable.util.escapeRegex(
-		                            $(this).val()
-		                        );
-		                //to select and search from grid
-		                        column
-		                            .search( val ? '^'+val+'$' : '', true, false )
-		                            .draw();
-		                    } );
+			function test() {
+				var table = $('#resTable').DataTable( {
+			        initComplete: function () {
+			            this.api().columns().every( function () {
+			                var column = this;
+			                var select = $('<select><option value=""></option></select>')
+			                    .appendTo( $(column.footer()).empty() )
+			                    .on( 'change', function () {
+			                        var val = $.fn.dataTable.util.escapeRegex(
+			                            $(this).val()
+			                        );
+			                //to select and search from grid
+			                        column
+			                            .search( val ? '^'+val+'$' : '', true, false )
+			                            .draw();
+			                    } );
 
-		                column.data().unique().sort().each( function ( d, j ) {
-		                    select.append( '<option value="'+d+'">'+d+'</option>' )
-		                } );
-		            } );
-		        }
-		    } );
-		}
+			                column.data().unique().sort().each( function ( d, j ) {
+			                    select.append( '<option value="'+d+'">'+d+'</option>' )
+			                } );
+			            } );
+			        }
+			    } );
+			}
 
-		function slettTable() {
-			var table = $("#resTable").DataTable({});
-			table.clear();
-			table.destroy();
-		}
-	</script>
-</head>
-<body>
-	<div id="header" style="display: flex; justify-content: space-between;">
-		<div>	
-    		<img src="grafikk/dirmin.svg" style="width:250px; height: 55px;" >
+			function slettTable() {
+				var table = $("#resTable").DataTable({});
+				table.clear();
+				table.destroy();
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header" style="display: flex; justify-content: space-between;">
+			<div>	
+	    		<img src="grafikk/dirmin.svg" style="width:250px; height: 55px;" >
+			</div>
+			<div style="float: right !important; margin-top: 35px;" >
+				<input type="text" placeholder="Søk" id="textSearch" value="Trondheim">
+				<input type="image" src="grafikk/search-icon.png" onClick="slettTable();fillTable()" id="submit" alt="Søk">
+			</div>
 		</div>
-		<div style="float: right !important; margin-top: 35px;" >
-			<input type="text" placeholder="Søk" id="textSearch" value="Trondheim">
-			<input type="image" src="grafikk/search-icon.png" onClick="slettTable();fillTable()" id="submit" alt="Søk">
-		</div>
-	</div>
-	<br>
-	<hr id="brunStrek">
-	<br>
 
-	<div id="user"></div>
+		<br>
+		<hr id="brunStrek">
+		<br>
+		<div id="user"></div>
 
-	<table id="resTable">
-		<thead>
-			<tr>
-				<th id="th1"></th>
-			</tr>
-		</thead>
-		<tbody id="tbody">
-		</tbody>
-	</table>
+		<table id="resTable">
+			<thead>
+				<tr>
+					<th id="th1"></th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
 
-	<div id="loader-container"></div>
-	<div id="loader"></div>
-	<p id="load-text">Laster</p>
-
-</body>
-
+		<div id="loader-container"></div>
+		<div id="loader"></div>
+		<p id="load-text">Laster</p>
+	</body>
 </html>
