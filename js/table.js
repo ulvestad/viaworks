@@ -14,7 +14,6 @@
 // 	    		var json = JSON.parse(this.responseText)
 	    		
 // 	    		var auth_cookie = ".ASPXAUTH="+json["Data"]["AuthCookie"]+";"
-// 		    	document.getElementById("user").innerHTML = "Bruker: " + json["Data"]["UserDisplayName"]
 // 				document.cookie = auth_cookie;
 // 				Cookies.set('.ASPXAUTH', json["Data"]["AuthCookie"], { path: '/' });
 				
@@ -44,7 +43,7 @@ function fillTable() {
 	var xhr = new XMLHttpRequest();
 	var text = document.getElementById("textSearch").value;
 	if(text == "") { text = "*"; }
-	var url_search = "http://viaworks.dmf.int/RestService/4/api/Search?q=" + text + "%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=10000&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags=";
+	var url_search = "http://viaworks.dmf.int/RestService/4/api/Search?q=" + text + "%20vw(vwr(Source%3DKjellerarkiv%201%5C%5Cbv-rapporter%20samlet%205.5.2017))&r=100&s=0&format=json&sort=score%20desc&lang=en-US&spid=0&df=&dt=&tags=";
 
   	xhr.open('GET', url_search, true);
   	xhr.setRequestHeader('Content-type', 'text/plain');
