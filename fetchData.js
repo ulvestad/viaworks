@@ -86,7 +86,7 @@ function SQLquery(){
 		client.connect()
 
 		const query = {
-		  	text: `SELECT * FROM new_data` //LIMIT 40
+		  	text: `SELECT * FROM new_data WHERE link IS NULL` //LIMIT 40
 		}
 		var testurl = "http://econym.org.uk/gmap/example_plotpoints.htm?q=Hello%20world@64.467169,12.297967&q=My%20Place@64.467003,12.296025&q=My%20Place@64.464589,12.316011&q=@63.612728,12.746092"
 		var base_url = "http://econym.org.uk/gmap/example_plotpoints.htm?"

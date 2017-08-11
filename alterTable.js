@@ -11,8 +11,8 @@ function SQLquery(){
 	client.connect()
 
 	const query = {
-		//text: 'SELECT COUNT(dok_id) FROM data'
-	  	text: `ALTER TABLE data ADD COLUMN stedsnavn_i_kommune character varying(150)` //LIMIT 40
+		// Legger til kolonnen "stedsnavn_i_kommune" i tabellen data
+	  	text: `ALTER TABLE data ADD COLUMN stedsnavn_i_kommune character varying(150)`
 	}
 
 	  client.query('SELECT COUNT(dok_id) FROM data',(err,res) =>{

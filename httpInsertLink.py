@@ -20,7 +20,7 @@ conn = psycopg2.connect("dbname='stedsnavn' user='postgres' host='10.103.166.213
 cur = conn.cursor()
 
 counter = 0
-with open('C:/Users/simulves/Desktop/koordinater.txt', encoding="utf-8") as f:
+with open('C:/Users/kimknuds/Desktop/koordinater.txt', encoding="utf-8") as f:
 	for line in f:
 		counter +=1
 		data = line.replace("\n","").split(";")

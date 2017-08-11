@@ -51,17 +51,16 @@ client.query(query, (err, res) => {
 	    }
 		if(link != null){
 	    	content += "\""+link+"\";"
-	    	table += "<td style=\"width: 35%;\"> <a target=\"_blank\" href=\" "+link+" \">goo.gl/"+randomLetters+"</a> <div class=\"box\"\"> <iframe src=\" "+link+" \"> </iframe> </div></td>\n"
+	    	table += "<td style=\"width: 35%;\"> <a target=\"_blank\" href=\" "+link+" \">goo.gl/"+randomLetters+"</a> <div class=\"box\"\"></div></td>\n"
 	    } else {
 	    	link +=" "
-	    	table += "<td style=\"width: 35%;\"> no exsiting link </td>\n"
+	    	table += "<td style=\"width: 35%;\"> no existing link </td>\n"
 	    }
 
 
 	  	table += "</tr>\n"
 	  	content = content+"\n"
 	  	fs.appendFile('C:/Users/kimknuds/Desktop/table.txt', table ,encoding='utf8')
-	  	
 	  	fs.appendFile('C:/Users/kimknuds/Desktop/exportCSV.csv', content, encoding='utf8');
 		}
 
